@@ -1,5 +1,7 @@
 """External DOT oracle vs instrumented original RERS C, with source mutants.
 Input interface restricted to common mapped symbols. Stop on first error.
+Requires the pinned sources.json beside this script.
+Original-C replay with undefined-behavior instrumentation is a separate analysis.
 """
 from pathlib import Path
 from collections import deque,Counter
@@ -10,11 +12,18 @@ URLS={'source.zip':'https://automata.cs.ru.nl/pmwiki/uploads/BenchmarkASMLRERS-Y
 MODELS=['m183','m158','m164','m159','m135','m55','m54','m76']
 
 def prepare():
-    expected=json.loads((ROOT/'sources.json').read_text())['archives'] if (ROOT/'sources.json').exists() else {}
+    manifest_path=ROOT/'sources.json'
+    if not manifest_path.exists():
+        raise FileNotFoundError('sources.json is required to verify pinned benchmark archives')
+    expected=json.loads(manifest_path.read_text())['archives']
+    for name in URLS:
+        if name not in expected:
+            raise ValueError('Missing pinned hash for '+name)
     for name,url in URLS.items():
         if not (ROOT/name).exists():urllib.request.urlretrieve(url,ROOT/name)
-        if name in expected:
-            assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==expected[name], 'Source archive changed: '+name
+        actual=hashlib.sha256((ROOT/name).read_bytes()).hexdigest()
+        if actual!=expected[name]:
+            raise ValueError('Source archive changed: '+name)
     manifest=[]
     zd=zipfile.ZipFile(ROOT/'source.zip');zc=zipfile.ZipFile(ROOT/'code.zip')
     for model in MODELS:
@@ -78,7 +87,11 @@ def compile_lib(folder,tag,code):
     obj=folder/(tag+'.so')
     proc=subprocess.run(['gcc','-std=c99','-O0','-fwrapv','-shared','-fPIC',str(path),'-o',str(obj)],capture_output=True,text=True)
     if proc.returncode:return None,proc.stderr
-    lib=ctypes.CDLL(str(obj));lib.step_bench.argtypes=[ctypes.c_int];lib.step_bench.restype=ctypes.c_int
+    lib=ctypes.CDLL(str(obj))
+    lib.reset_bench.argtypes=[]
+    lib.reset_bench.restype=None
+    lib.step_bench.argtypes=[ctypes.c_int]
+    lib.step_bench.restype=ctypes.c_int
     return lib,None
 
 def evaluate(lib,cases,mapping,stop_first=True):
@@ -118,12 +131,16 @@ def main():
         source,mapping,initial,edges,alphabet=load(model)
         paths,targets,cases=cases_for(initial,edges,alphabet)
         folder=ROOT/model/'run';folder.mkdir(exist_ok=True)
-        lib,error=compile_lib(folder,'reference',instrument(source,mapping));assert lib,error
+        lib,error=compile_lib(folder,'reference',instrument(source,mapping))
+        if lib is None:
+            raise RuntimeError('Reference compilation failed for '+model+': '+str(error))
         failures=evaluate(lib,cases,mapping,False)
         result={'benchmark':model,'dot_states':len({a for a,_ in edges}),
                 'dot_transitions':len(edges),'common_input_symbols':len(alphabet),
                 'reachable_nonerror_states_common_interface':len(paths),'transition_targets':len(targets),
+                # Suite length; not total executions across reference and mutants.
                 'tests':len(cases),'input_steps':sum(len(s) for s,_ in cases),
+                'input_steps_definition':'Sum of generated test lengths; equals reference input executions only when every test completes',
                 'reference_failed_tests':len(failures),'reference_first_failure':failures[:1],
                 'mutants':[],'scope':'Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture'}
         (ROOT/model/'tests.json').write_text(json.dumps(cases))
