@@ -1,5 +1,13 @@
-/* Independent procedural pilot SUT. No oracle tables are linked here. */
-typedef struct { int mode,on,count,left,right; } Controller;
+/* Procedural pilot SUT with separately controlled cycle stages. */
+#include <assert.h>
+#include <string.h>
+typedef struct {
+    int mode,on,count,left,right;
+    int engine,hazard,direction;
+    int sampled_engine,sampled_hazard,sampled_direction;
+    int next_mode,next_on,next_count,next_left,next_right;
+    int stage;
+} Controller;
 static int choose(int e,int h,int p,int bug) {
     if(bug==11)h=0;
     if(bug==4 && !e)return 0;
@@ -13,26 +21,41 @@ static void output(int m,int on,int *l,int *r,int bug) {
     if(bug==9){int t=*l;*l=*r;*r=t;}
     if(bug==12 && m==3)*r=0;
 }
-void reset(Controller *s){s->mode=s->on=s->count=s->left=s->right=0;}
-/* Returns 1 when Decide changes externally visible output before Emit. */
-int cycle(Controller *s,int e,int h,int p,int de,int dh,int dp,
-          int ee,int eh,int ep,int bug) {
-    int oldmode=s->mode, oldl=s->left, oldr=s->right;
-    if(bug==6){e=de;h=dh;p=dp;}
-    if(bug==7){e=ee;h=eh;p=ep;}
+
+void reset(Controller *s){memset(s,0,sizeof(*s));}
+void assign_inputs(Controller *s,int e,int h,int p){
+    assert((e==0||e==1)&&(h==0||h==1)&&p>=0&&p<=2);
+    s->engine=e;s->hazard=h;s->direction=p;
+}
+void sample(Controller *s){
+    assert(s->stage==0);
+    s->sampled_engine=s->engine;s->sampled_hazard=s->hazard;
+    s->sampled_direction=s->direction;s->stage=1;
+}
+static void compute_pending(Controller *s,int e,int h,int p,int bug){
     int m=choose(e,h,p,bug),on=s->on,n=s->count;
     int reload=bug==1?3:bug==2?5:4;
     if(!m){on=0;n=0;}
-    else if(!oldmode || (bug==5 && m!=oldmode)){on=1;n=reload;}
+    else if(!s->mode || (bug==5 && m!=s->mode)){on=1;n=reload;}
     else if(n){n--;}
     else{on=!on;n=reload;}
-    int l,r;output(m,on,&l,&r,bug);
-    if(bug==8){s->left=l;s->right=r;} /* faulty publication at Decide */
-    int early=s->left!=oldl || s->right!=oldr;
-    s->mode=m;s->on=on;s->count=n;
-    if(bug!=10){s->left=l;s->right=r;}
-    else { /* faulty output uses previous mode and current phase */
-        output(oldmode,s->on,&s->left,&s->right,0);
-    }
-    return early;
+    s->next_mode=m;s->next_on=on;s->next_count=n;
+    output(m,on,&s->next_left,&s->next_right,bug);
+}
+void decide(Controller *s,int bug){
+    assert(s->stage==1);
+    if(bug==6)compute_pending(s,s->engine,s->hazard,s->direction,bug);
+    else compute_pending(s,s->sampled_engine,s->sampled_hazard,s->sampled_direction,bug);
+    if(bug==8){s->left=s->next_left;s->right=s->next_right;}
+    s->stage=2;
+}
+void emit(Controller *s,int bug){
+    assert(s->stage==2);
+    /* Fault 7 recomputes the response from live inputs at publication. */
+    if(bug==7)compute_pending(s,s->engine,s->hazard,s->direction,bug);
+    int previous_mode=s->mode;
+    s->mode=s->next_mode;s->on=s->next_on;s->count=s->next_count;
+    s->left=s->next_left;s->right=s->next_right;
+    if(bug==10)output(previous_mode,s->on,&s->left,&s->right,0);
+    s->stage=0;
 }
