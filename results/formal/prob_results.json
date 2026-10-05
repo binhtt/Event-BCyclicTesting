@@ -1,0 +1,64 @@
+[
+  {
+    "machine": "M0_AtomicCycle",
+    "command": [
+      "/tmp/prob-step3/ProB/probcli",
+      "/workspace/scratch/744c1bbef7d6/automotive_step3/models/M0_AtomicCycle.eventb",
+      "-p",
+      "MAXINT",
+      "1000",
+      "-p",
+      "MININT",
+      "-1000",
+      "-pref_group",
+      "model_check",
+      "unlimited",
+      "-model_check",
+      "-c",
+      "-logxml",
+      "/workspace/scratch/744c1bbef7d6/automotive_step3/logs/M0_AtomicCycle.xml"
+    ],
+    "exit_code": 0,
+    "exhaustive_complete": true,
+    "passed": true,
+    "statistics": {
+      "STATES": 1010,
+      "TOTAL_TRANSITIONS": 24194,
+      "deadlocked": 0,
+      "invariant_violated": 0,
+      "invariant_not_checked": 0,
+      "open": 0
+    }
+  },
+  {
+    "machine": "M1_SampledCycle",
+    "command": [
+      "/tmp/prob-step3/ProB/probcli",
+      "/workspace/scratch/744c1bbef7d6/automotive_step3/models/M1_SampledCycle.eventb",
+      "-p",
+      "MAXINT",
+      "1000",
+      "-p",
+      "MININT",
+      "-1000",
+      "-pref_group",
+      "model_check",
+      "unlimited",
+      "-model_check",
+      "-c",
+      "-logxml",
+      "/workspace/scratch/744c1bbef7d6/automotive_step3/logs/M1_SampledCycle.xml"
+    ],
+    "exit_code": 0,
+    "exhaustive_complete": true,
+    "passed": true,
+    "statistics": {
+      "STATES": 25202,
+      "TOTAL_TRANSITIONS": 327602,
+      "deadlocked": 0,
+      "invariant_violated": 0,
+      "invariant_not_checked": 0,
+      "open": 0
+    }
+  }
+]

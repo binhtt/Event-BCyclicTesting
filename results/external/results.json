@@ -1,0 +1,1785 @@
+[
+  {
+    "benchmark": "m183",
+    "dot_states": 9,
+    "dot_transitions": 108,
+    "common_input_symbols": 5,
+    "reachable_nonerror_states_common_interface": 8,
+    "transition_targets": 40,
+    "tests": 70,
+    "input_steps": 255,
+    "reference_failed_tests": 0,
+    "reference_first_failure": [],
+    "mutants": [
+      {
+        "id": "output_constant_0",
+        "family": "output_constant",
+        "start": 1739,
+        "end": 1757,
+        "original": "printf(\"%d\\n\", 60)",
+        "replacement": "printf(\"%d\\n\", 1)",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 17,
+            "step": 1,
+            "inputs": [
+              "usr4_ni1_ne1",
+              "usr2_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr2_ai1_ce4",
+              "none"
+            ],
+            "expected_code": 60,
+            "actual_code": 1
+          }
+        ]
+      },
+      {
+        "id": "output_constant_1",
+        "family": "output_constant",
+        "start": 2603,
+        "end": 2621,
+        "original": "printf(\"%d\\n\", 63)",
+        "replacement": "printf(\"%d\\n\", 1)",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 4,
+            "step": 0,
+            "inputs": [
+              "usr4_ni1_ne1"
+            ],
+            "expected_symbols": [
+              "usr2_ai1_ce4"
+            ],
+            "expected_code": 63,
+            "actual_code": 1
+          }
+        ]
+      },
+      {
+        "id": "output_constant_2",
+        "family": "output_constant",
+        "start": 1044,
+        "end": 1062,
+        "original": "printf(\"%d\\n\", 60)",
+        "replacement": "printf(\"%d\\n\", 1)",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 39,
+            "step": 3,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ai1_VoidReply",
+              "ai1_ce2",
+              "usr4_ni1_ne1"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "ai1_VoidReply",
+              "usr4_ai1_ce2",
+              "none"
+            ],
+            "expected_code": 60,
+            "actual_code": 1
+          }
+        ]
+      },
+      {
+        "id": "output_constant_3",
+        "family": "output_constant",
+        "start": 1450,
+        "end": 1468,
+        "original": "printf(\"%d\\n\", 64)",
+        "replacement": "printf(\"%d\\n\", 1)",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 8,
+            "step": 1,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "ai1_VoidReply"
+            ],
+            "expected_code": 64,
+            "actual_code": 1
+          }
+        ]
+      },
+      {
+        "id": "output_constant_4",
+        "family": "output_constant",
+        "start": 825,
+        "end": 843,
+        "original": "printf(\"%d\\n\", 64)",
+        "replacement": "printf(\"%d\\n\", 1)",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 38,
+            "step": 3,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ai1_VoidReply",
+              "ai1_ce2",
+              "usr4_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "ai1_VoidReply",
+              "usr4_ai1_ce2",
+              "ai1_VoidReply"
+            ],
+            "expected_code": 64,
+            "actual_code": 1
+          }
+        ]
+      },
+      {
+        "id": "input_guard_0",
+        "family": "input_guard",
+        "start": 2153,
+        "end": 2164,
+        "original": "input == 56",
+        "replacement": "input == 57",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 28,
+            "step": 2,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ni1_ne1",
+              "usr4_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "none",
+              "ni1_ne1__ai1_VoidReply"
+            ],
+            "expected_code": 66,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "input_guard_1",
+        "family": "input_guard",
+        "start": 2651,
+        "end": 2662,
+        "original": "input == 58",
+        "replacement": "input == 59",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 1,
+            "step": 0,
+            "inputs": [
+              "ai1_ce2"
+            ],
+            "expected_symbols": [
+              "ai1_VoidReply"
+            ],
+            "expected_code": 64,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "input_guard_2",
+        "family": "input_guard",
+        "start": 3022,
+        "end": 3033,
+        "original": "input == 59",
+        "replacement": "input == 60",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 62,
+            "step": 5,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ai1_VoidReply",
+              "ai1_ce2",
+              "usr4_ni1_ne1",
+              "usr4_ai1_VoidReply",
+              "usr2_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "ai1_VoidReply",
+              "usr4_ai1_ce2",
+              "none",
+              "usr2_ai1_ce4",
+              "ai1_VoidReply"
+            ],
+            "expected_code": 64,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "input_guard_3",
+        "family": "input_guard",
+        "start": 1254,
+        "end": 1265,
+        "original": "input == 56",
+        "replacement": "input == 57",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 8,
+            "step": 1,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "ai1_VoidReply"
+            ],
+            "expected_code": 64,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "input_guard_4",
+        "family": "input_guard",
+        "start": 1148,
+        "end": 1159,
+        "original": "input == 57",
+        "replacement": "input == 58",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 6,
+            "step": 1,
+            "inputs": [
+              "ai1_ce1",
+              "ai1_ce2"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "error"
+            ],
+            "expected_code": 67,
+            "actual_code": 60
+          }
+        ]
+      },
+      {
+        "id": "delete_state_update_0",
+        "family": "delete_state_update",
+        "start": 1954,
+        "end": 2041,
+        "original": "a1504052271 = (((((((a1504052271 * a355441369) % 14999) - 8929) / 5) * 5) % 12) + 145);",
+        "replacement": ";",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 62,
+            "step": 5,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ai1_VoidReply",
+              "ai1_ce2",
+              "usr4_ni1_ne1",
+              "usr4_ai1_VoidReply",
+              "usr2_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "ai1_VoidReply",
+              "usr4_ai1_ce2",
+              "none",
+              "usr2_ai1_ce4",
+              "ai1_VoidReply"
+            ],
+            "expected_code": 64,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "delete_state_update_1",
+        "family": "delete_state_update",
+        "start": 1878,
+        "end": 1948,
+        "original": "a355441369 = ((((a1504052271 * a1504052271) - -10765) + 1445) - -189);",
+        "replacement": ";",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "delete_state_update_2",
+        "family": "delete_state_update",
+        "start": 1183,
+        "end": 1198,
+        "original": "a553774011 = 9;",
+        "replacement": ";",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 28,
+            "step": 2,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ni1_ne1",
+              "usr4_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "none",
+              "ni1_ne1__ai1_VoidReply"
+            ],
+            "expected_code": 66,
+            "actual_code": 64
+          }
+        ]
+      },
+      {
+        "id": "delete_state_update_3",
+        "family": "delete_state_update",
+        "start": 3498,
+        "end": 3586,
+        "original": "a355441369 = ((((((a355441369 * a1504052271) % 14999) + 17432) * 1) + -12283) - -19411);",
+        "replacement": ";",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 38,
+            "step": 3,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ai1_VoidReply",
+              "ai1_ce2",
+              "usr4_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "ai1_VoidReply",
+              "usr4_ai1_ce2",
+              "ai1_VoidReply"
+            ],
+            "expected_code": 64,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "delete_state_update_4",
+        "family": "delete_state_update",
+        "start": 2188,
+        "end": 2242,
+        "original": "a1504052271 = ((((a1504052271 + 9836) * 10) / 9) / 5);",
+        "replacement": ";",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 46,
+            "step": 3,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ni1_ne1",
+              "usr4_ai1_VoidReply",
+              "ai1_ce2"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "none",
+              "ni1_ne1__ai1_VoidReply",
+              "usr4_ai1_ce2"
+            ],
+            "expected_code": 61,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "state_constant_0",
+        "family": "state_constant",
+        "start": 1021,
+        "end": 1036,
+        "original": "a553774011 = 7;",
+        "replacement": "a553774011 = 8;",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 58,
+            "step": 4,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ai1_VoidReply",
+              "ai1_ce2",
+              "usr4_ni1_ne1",
+              "usr4_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "ai1_VoidReply",
+              "usr4_ai1_ce2",
+              "none",
+              "usr2_ai1_ce4"
+            ],
+            "expected_code": 63,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "state_constant_1",
+        "family": "state_constant",
+        "start": 1183,
+        "end": 1198,
+        "original": "a553774011 = 9;",
+        "replacement": "a553774011 = 10;",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 28,
+            "step": 2,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ni1_ne1",
+              "usr4_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "none",
+              "ni1_ne1__ai1_VoidReply"
+            ],
+            "expected_code": 66,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "state_constant_2",
+        "family": "state_constant",
+        "start": 2580,
+        "end": 2595,
+        "original": "a553774011 = 4;",
+        "replacement": "a553774011 = 5;",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 17,
+            "step": 1,
+            "inputs": [
+              "usr4_ni1_ne1",
+              "usr2_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr2_ai1_ce4",
+              "none"
+            ],
+            "expected_code": 60,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "state_constant_3",
+        "family": "state_constant",
+        "start": 2895,
+        "end": 2910,
+        "original": "a553774011 = 2;",
+        "replacement": "a553774011 = 3;",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 8,
+            "step": 1,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "ai1_VoidReply"
+            ],
+            "expected_code": 64,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "relational_boundary_0",
+        "family": "relational_boundary",
+        "start": 4417,
+        "end": 4418,
+        "original": "<",
+        "replacement": "<=",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "relational_boundary_1",
+        "family": "relational_boundary",
+        "start": 4251,
+        "end": 4252,
+        "original": "<",
+        "replacement": "<=",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "relational_boundary_2",
+        "family": "relational_boundary",
+        "start": 3750,
+        "end": 3751,
+        "original": "<",
+        "replacement": "<=",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "relational_boundary_3",
+        "family": "relational_boundary",
+        "start": 4516,
+        "end": 4517,
+        "original": "<",
+        "replacement": "<=",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "relational_boundary_4",
+        "family": "relational_boundary",
+        "start": 4559,
+        "end": 4560,
+        "original": "<",
+        "replacement": "<=",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "arithmetic_sign_0",
+        "family": "arithmetic_sign",
+        "start": 2862,
+        "end": 2865,
+        "original": "+ 4",
+        "replacement": "- 4",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "arithmetic_sign_1",
+        "family": "arithmetic_sign",
+        "start": 1718,
+        "end": 1723,
+        "original": "+ 164",
+        "replacement": "- 164",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 30,
+            "step": 2,
+            "inputs": [
+              "usr4_ni1_ne1",
+              "usr2_ai1_VoidReply",
+              "ai1_ce1"
+            ],
+            "expected_symbols": [
+              "usr2_ai1_ce4",
+              "none",
+              "usr4_ai1_ce1"
+            ],
+            "expected_code": 62,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "arithmetic_sign_2",
+        "family": "arithmetic_sign",
+        "start": 1647,
+        "end": 1654,
+        "original": "+ 18934",
+        "replacement": "- 18934",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 30,
+            "step": 2,
+            "inputs": [
+              "usr4_ni1_ne1",
+              "usr2_ai1_VoidReply",
+              "ai1_ce1"
+            ],
+            "expected_symbols": [
+              "usr2_ai1_ce4",
+              "none",
+              "usr4_ai1_ce1"
+            ],
+            "expected_code": 62,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "arithmetic_sign_3",
+        "family": "arithmetic_sign",
+        "start": 2310,
+        "end": 2314,
+        "original": "+ 50",
+        "replacement": "- 50",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 46,
+            "step": 3,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ni1_ne1",
+              "usr4_ai1_VoidReply",
+              "ai1_ce2"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "none",
+              "ni1_ne1__ai1_VoidReply",
+              "usr4_ai1_ce2"
+            ],
+            "expected_code": 61,
+            "actual_code": 67
+          }
+        ]
+      },
+      {
+        "id": "arithmetic_sign_4",
+        "family": "arithmetic_sign",
+        "start": 3552,
+        "end": 3559,
+        "original": "+ 17432",
+        "replacement": "- 17432",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 38,
+            "step": 3,
+            "inputs": [
+              "ai1_ce1",
+              "usr4_ai1_VoidReply",
+              "ai1_ce2",
+              "usr4_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr4_ai1_ce1",
+              "ai1_VoidReply",
+              "usr4_ai1_ce2",
+              "ai1_VoidReply"
+            ],
+            "expected_code": 64,
+            "actual_code": 67
+          }
+        ]
+      }
+    ],
+    "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+    "candidate_sites_by_family": {
+      "output_constant": 13,
+      "input_guard": 13,
+      "delete_state_update": 20,
+      "state_constant": 4,
+      "relational_boundary": 7,
+      "arithmetic_sign": 17
+    },
+    "mutant_counts": {
+      "killed": 22,
+      "survived": 7
+    },
+    "mutation_status": "completed"
+  },
+  {
+    "benchmark": "m158",
+    "dot_states": 28,
+    "dot_transitions": 3360,
+    "common_input_symbols": 17,
+    "reachable_nonerror_states_common_interface": 27,
+    "transition_targets": 459,
+    "tests": 629,
+    "input_steps": 3978,
+    "reference_failed_tests": 1,
+    "reference_first_failure": [
+      {
+        "test_index": 85,
+        "step": 3,
+        "inputs": [
+          "ai1_ce1",
+          "usr3_ai2_re2",
+          "usr1_ai1_VoidReply",
+          "ai1_ce1"
+        ],
+        "expected_symbols": [
+          "usr3_ai2_ce8",
+          "usr1_ai1_ce20",
+          "ai1_re3",
+          "usr3_ai2_ce8"
+        ],
+        "expected_code": 87,
+        "actual_code": 95
+      }
+    ],
+    "mutants": [],
+    "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+    "mutation_status": "blocked: model/C alignment failed",
+    "unmodified_C_reproduction": {
+      "stdout": "87\n82\n77\n",
+      "stderr": "Invalid input: 67\n",
+      "returncode": 0
+    }
+  },
+  {
+    "benchmark": "m164",
+    "dot_states": 43,
+    "dot_transitions": 4386,
+    "common_input_symbols": 22,
+    "reachable_nonerror_states_common_interface": 42,
+    "transition_targets": 924,
+    "tests": 1298,
+    "input_steps": 6050,
+    "reference_failed_tests": 1218,
+    "reference_first_failure": [
+      {
+        "test_index": 31,
+        "step": 1,
+        "inputs": [
+          "ai1_ce1",
+          "usr2_ai3_re1"
+        ],
+        "expected_symbols": [
+          "usr2_ai3_ce19",
+          "usr2_ai3_ce1"
+        ],
+        "expected_code": 85,
+        "actual_code": 98
+      }
+    ],
+    "mutants": [],
+    "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+    "mutation_status": "blocked: model/C alignment failed",
+    "unmodified_C_reproduction": {
+      "stdout": "91\n",
+      "stderr": "Invalid input: 55\n",
+      "returncode": 0
+    }
+  },
+  {
+    "benchmark": "m159",
+    "dot_states": 30,
+    "dot_transitions": 3600,
+    "common_input_symbols": 21,
+    "reachable_nonerror_states_common_interface": 29,
+    "transition_targets": 609,
+    "tests": 903,
+    "input_steps": 5838,
+    "reference_failed_tests": 0,
+    "reference_first_failure": [],
+    "mutants": [
+      {
+        "id": "output_constant_0",
+        "family": "output_constant",
+        "start": 12287,
+        "end": 12306,
+        "original": "printf(\"%d\\n\", 100)",
+        "replacement": "printf(\"%d\\n\", 1)",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 800,
+            "step": 9,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re13",
+              "usr2_ai3_VoidReply",
+              "usr1_ai1_VoidReply",
+              "usr1_ai1_VoidReply",
+              "usr1_ai2_VoidReply",
+              "usr1_ai2_VoidReply",
+              "usr1_ai2_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce13",
+              "usr1_ai1_ce4",
+              "usr1_ai1_ce4",
+              "usr1_ai2_ce11",
+              "usr1_ai2_ce3",
+              "usr1_ai2_ce10",
+              "usr2_ai2_ce4"
+            ],
+            "expected_code": 100,
+            "actual_code": 1
+          }
+        ]
+      },
+      {
+        "id": "output_constant_1",
+        "family": "output_constant",
+        "start": 24006,
+        "end": 24024,
+        "original": "printf(\"%d\\n\", 84)",
+        "replacement": "printf(\"%d\\n\", 1)",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 98,
+            "step": 3,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re5"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce5"
+            ],
+            "expected_code": 84,
+            "actual_code": 1
+          }
+        ]
+      },
+      {
+        "id": "output_constant_2",
+        "family": "output_constant",
+        "start": 20976,
+        "end": 20994,
+        "original": "printf(\"%d\\n\", 77)",
+        "replacement": "printf(\"%d\\n\", 1)",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 94,
+            "step": 3,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re19"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr1_ai1_ce20"
+            ],
+            "expected_code": 77,
+            "actual_code": 1
+          }
+        ]
+      },
+      {
+        "id": "output_constant_3",
+        "family": "output_constant",
+        "start": 14113,
+        "end": 14131,
+        "original": "printf(\"%d\\n\", 91)",
+        "replacement": "printf(\"%d\\n\", 1)",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 277,
+            "step": 4,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re3",
+              "usr2_ai3_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce3",
+              "usr1_ai1_ce4"
+            ],
+            "expected_code": 91,
+            "actual_code": 1
+          }
+        ]
+      },
+      {
+        "id": "output_constant_4",
+        "family": "output_constant",
+        "start": 25123,
+        "end": 25141,
+        "original": "printf(\"%d\\n\", 86)",
+        "replacement": "printf(\"%d\\n\", 1)",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 100,
+            "step": 3,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re7"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce7"
+            ],
+            "expected_code": 86,
+            "actual_code": 1
+          }
+        ]
+      },
+      {
+        "id": "input_guard_0",
+        "family": "input_guard",
+        "start": 9247,
+        "end": 9258,
+        "original": "input == 63",
+        "replacement": "input == 64",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 58,
+            "step": 2,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr2_ai3_re7"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "error"
+            ],
+            "expected_code": 104,
+            "actual_code": 96
+          }
+        ]
+      },
+      {
+        "id": "input_guard_1",
+        "family": "input_guard",
+        "start": 31152,
+        "end": 31163,
+        "original": "input == 65",
+        "replacement": "input == 66",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 505,
+            "step": 5,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re6",
+              "usr2_ai3_VoidReply",
+              "usr1_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce6",
+              "usr1_ai1_ce4",
+              "usr1_ai2_ce10"
+            ],
+            "expected_code": 95,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "input_guard_2",
+        "family": "input_guard",
+        "start": 6879,
+        "end": 6890,
+        "original": "input == 67",
+        "replacement": "input == 68",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 653,
+            "step": 7,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re13",
+              "usr2_ai3_VoidReply",
+              "usr1_ai1_VoidReply",
+              "usr1_ai1_VoidReply",
+              "usr1_ai2_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce13",
+              "usr1_ai1_ce4",
+              "usr1_ai1_ce4",
+              "usr1_ai2_ce11",
+              "usr1_ai2_ce3"
+            ],
+            "expected_code": 103,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "input_guard_3",
+        "family": "input_guard",
+        "start": 15716,
+        "end": 15727,
+        "original": "input == 67",
+        "replacement": "input == 68",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 611,
+            "step": 6,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re6",
+              "usr2_ai3_VoidReply",
+              "usr1_ai1_VoidReply",
+              "usr1_ai2_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce6",
+              "usr1_ai1_ce4",
+              "usr1_ai2_ce10",
+              "usr2_ai2_ce10"
+            ],
+            "expected_code": 76,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "input_guard_4",
+        "family": "input_guard",
+        "start": 21759,
+        "end": 21770,
+        "original": "input == 56",
+        "replacement": "input == 57",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 95,
+            "step": 3,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re2"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce2"
+            ],
+            "expected_code": 90,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "delete_state_update_0",
+        "family": "delete_state_update",
+        "start": 20265,
+        "end": 20282,
+        "original": "a649572050 = 32 ;",
+        "replacement": ";",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 214,
+            "step": 4,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re18",
+              "usr2_ai3_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce18",
+              "usr2_ai2_ce14"
+            ],
+            "expected_code": 78,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "delete_state_update_1",
+        "family": "delete_state_update",
+        "start": 20092,
+        "end": 20109,
+        "original": "a932961526 = 32 ;",
+        "replacement": ";",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 214,
+            "step": 4,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re18",
+              "usr2_ai3_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce18",
+              "usr2_ai2_ce14"
+            ],
+            "expected_code": 78,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "delete_state_update_2",
+        "family": "delete_state_update",
+        "start": 26951,
+        "end": 26968,
+        "original": "a932961526 = 35 ;",
+        "replacement": ";",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 172,
+            "step": 4,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re13",
+              "usr2_ai3_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce13",
+              "usr1_ai1_ce4"
+            ],
+            "expected_code": 91,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "delete_state_update_3",
+        "family": "delete_state_update",
+        "start": 5287,
+        "end": 5304,
+        "original": "a932961526 = 36 ;",
+        "replacement": ";",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 525,
+            "step": 6,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re1",
+              "usr2_ai3_VoidReply",
+              "usr2_ai2_VoidReply",
+              "ai1_ce1"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce1",
+              "usr2_ai2_ce14",
+              "ai1_re1",
+              "usr3_ai2_ce8"
+            ],
+            "expected_code": 93,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "delete_state_update_4",
+        "family": "delete_state_update",
+        "start": 6285,
+        "end": 6302,
+        "original": "a932961526 = 34 ;",
+        "replacement": ";",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 822,
+            "step": 10,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re12",
+              "usr2_ai3_VoidReply",
+              "usr1_ai1_VoidReply",
+              "usr1_ai1_VoidReply",
+              "usr1_ai2_VoidReply",
+              "usr1_ai2_VoidReply",
+              "usr1_ai2_VoidReply",
+              "usr2_ai2_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce12",
+              "usr1_ai1_ce4",
+              "usr1_ai1_ce4",
+              "usr1_ai2_ce11",
+              "usr1_ai2_ce3",
+              "usr1_ai2_ce10",
+              "usr2_ai2_ce3",
+              "usr2_ai2_ce11"
+            ],
+            "expected_code": 82,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "state_constant_0",
+        "family": "state_constant",
+        "start": 12916,
+        "end": 12933,
+        "original": "a649572050 = 32 ;",
+        "replacement": "a649572050 = 33 ;",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 547,
+            "step": 6,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re12",
+              "usr2_ai3_VoidReply",
+              "usr1_ai1_VoidReply",
+              "usr1_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce12",
+              "usr1_ai1_ce4",
+              "usr1_ai1_ce4",
+              "usr1_ai2_ce11"
+            ],
+            "expected_code": 94,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "state_constant_1",
+        "family": "state_constant",
+        "start": 26256,
+        "end": 26274,
+        "original": "a1423643691 = 34 ;",
+        "replacement": "a1423643691 = 35 ;",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 148,
+            "step": 4,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re12",
+              "usr1_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce12",
+              "error"
+            ],
+            "expected_code": 104,
+            "actual_code": 94
+          }
+        ]
+      },
+      {
+        "id": "state_constant_2",
+        "family": "state_constant",
+        "start": 25520,
+        "end": 25537,
+        "original": "a649572050 = 32 ;",
+        "replacement": "a649572050 = 33 ;",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 382,
+            "step": 4,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re8",
+              "usr2_ai3_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce8",
+              "usr1_ai1_ce4"
+            ],
+            "expected_code": 91,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "state_constant_3",
+        "family": "state_constant",
+        "start": 6285,
+        "end": 6302,
+        "original": "a932961526 = 34 ;",
+        "replacement": "a932961526 = 35 ;",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 822,
+            "step": 10,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re12",
+              "usr2_ai3_VoidReply",
+              "usr1_ai1_VoidReply",
+              "usr1_ai1_VoidReply",
+              "usr1_ai2_VoidReply",
+              "usr1_ai2_VoidReply",
+              "usr1_ai2_VoidReply",
+              "usr2_ai2_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce12",
+              "usr1_ai1_ce4",
+              "usr1_ai1_ce4",
+              "usr1_ai2_ce11",
+              "usr1_ai2_ce3",
+              "usr1_ai2_ce10",
+              "usr2_ai2_ce3",
+              "usr2_ai2_ce11"
+            ],
+            "expected_code": 82,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "state_constant_4",
+        "family": "state_constant",
+        "start": 11069,
+        "end": 11086,
+        "original": "a896425544 = 33 ;",
+        "replacement": "a896425544 = 34 ;",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 505,
+            "step": 5,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re6",
+              "usr2_ai3_VoidReply",
+              "usr1_ai1_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce6",
+              "usr1_ai1_ce4",
+              "usr1_ai2_ce10"
+            ],
+            "expected_code": 95,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "relational_boundary_0",
+        "family": "relational_boundary",
+        "start": 11602,
+        "end": 11603,
+        "original": "<",
+        "replacement": "<=",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "relational_boundary_1",
+        "family": "relational_boundary",
+        "start": 5852,
+        "end": 5853,
+        "original": "<",
+        "replacement": "<=",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "relational_boundary_2",
+        "family": "relational_boundary",
+        "start": 12387,
+        "end": 12388,
+        "original": "<",
+        "replacement": "<=",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "relational_boundary_3",
+        "family": "relational_boundary",
+        "start": 17812,
+        "end": 17813,
+        "original": "<",
+        "replacement": "<=",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "relational_boundary_4",
+        "family": "relational_boundary",
+        "start": 35327,
+        "end": 35328,
+        "original": "<",
+        "replacement": "<=",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "arithmetic_sign_0",
+        "family": "arithmetic_sign",
+        "start": 20174,
+        "end": 20179,
+        "original": "+ 242",
+        "replacement": "- 242",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 214,
+            "step": 4,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re18",
+              "usr2_ai3_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce18",
+              "usr2_ai2_ce14"
+            ],
+            "expected_code": 78,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "arithmetic_sign_1",
+        "family": "arithmetic_sign",
+        "start": 31420,
+        "end": 31426,
+        "original": "+ 4768",
+        "replacement": "- 4768",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 611,
+            "step": 6,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re6",
+              "usr2_ai3_VoidReply",
+              "usr1_ai1_VoidReply",
+              "usr1_ai2_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce6",
+              "usr1_ai1_ce4",
+              "usr1_ai2_ce10",
+              "usr2_ai2_ce10"
+            ],
+            "expected_code": 76,
+            "actual_code": 104
+          }
+        ]
+      },
+      {
+        "id": "arithmetic_sign_2",
+        "family": "arithmetic_sign",
+        "start": 16278,
+        "end": 16281,
+        "original": "+ 2",
+        "replacement": "- 2",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "arithmetic_sign_3",
+        "family": "arithmetic_sign",
+        "start": 20480,
+        "end": 20483,
+        "original": "+ 0",
+        "replacement": "- 0",
+        "status": "survived",
+        "witness": []
+      },
+      {
+        "id": "arithmetic_sign_4",
+        "family": "arithmetic_sign",
+        "start": 15848,
+        "end": 15852,
+        "original": "+ 10",
+        "replacement": "- 10",
+        "status": "killed",
+        "witness": [
+          {
+            "test_index": 696,
+            "step": 7,
+            "inputs": [
+              "ai1_ce1",
+              "usr3_ai2_re1",
+              "usr4_ai2_VoidReply",
+              "usr2_ai3_re6",
+              "usr2_ai3_VoidReply",
+              "usr1_ai1_VoidReply",
+              "usr1_ai2_VoidReply",
+              "usr2_ai2_VoidReply"
+            ],
+            "expected_symbols": [
+              "usr3_ai2_ce8",
+              "usr4_ai2_ce2",
+              "usr2_ai3_ce19",
+              "usr2_ai3_ce6",
+              "usr1_ai1_ce4",
+              "usr1_ai2_ce10",
+              "usr2_ai2_ce10",
+              "usr2_ai2_ce14"
+            ],
+            "expected_code": 78,
+            "actual_code": 104
+          }
+        ]
+      }
+    ],
+    "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+    "candidate_sites_by_family": {
+      "output_constant": 40,
+      "input_guard": 40,
+      "delete_state_update": 214,
+      "state_constant": 81,
+      "relational_boundary": 182,
+      "arithmetic_sign": 57
+    },
+    "mutant_counts": {
+      "killed": 23,
+      "survived": 7
+    },
+    "mutation_status": "completed"
+  },
+  {
+    "benchmark": "m135",
+    "dot_states": 57,
+    "dot_transitions": 10089,
+    "common_input_symbols": 27,
+    "reachable_nonerror_states_common_interface": 56,
+    "transition_targets": 1512,
+    "tests": 2646,
+    "input_steps": 33021,
+    "reference_failed_tests": 2,
+    "reference_first_failure": [
+      {
+        "test_index": 135,
+        "step": 3,
+        "inputs": [
+          "ai1_ce1",
+          "usr7_ai2_re2",
+          "usr1_ai1_VoidReply",
+          "ai1_ce1"
+        ],
+        "expected_symbols": [
+          "usr7_ai2_ce12",
+          "usr1_ai1_ce20",
+          "ai1_re3",
+          "usr7_ai2_ce12"
+        ],
+        "expected_code": 92,
+        "actual_code": 113
+      }
+    ],
+    "mutants": [],
+    "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+    "mutation_status": "blocked: model/C alignment failed",
+    "unmodified_C_reproduction": {
+      "stdout": "92\n83\n87\n",
+      "stderr": "Invalid input: 65\n",
+      "returncode": 0
+    }
+  },
+  {
+    "benchmark": "m55",
+    "dot_states": 181,
+    "dot_transitions": 28236,
+    "common_input_symbols": 18,
+    "reachable_nonerror_states_common_interface": 181,
+    "transition_targets": 3258,
+    "tests": 9306,
+    "input_steps": 184986,
+    "reference_failed_tests": 31,
+    "reference_first_failure": [
+      {
+        "test_index": 44,
+        "step": 1,
+        "inputs": [
+          "ai1_ce2",
+          "usr3_ai1_re1"
+        ],
+        "expected_symbols": [
+          "usr3_ai1_ce1",
+          "ni1_ne4__ai1_VoidReply"
+        ],
+        "expected_code": 78,
+        "actual_code": 95
+      }
+    ],
+    "mutants": [],
+    "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+    "mutation_status": "blocked: model/C alignment failed",
+    "unmodified_C_reproduction": {
+      "stdout": "86\n",
+      "stderr": "Invalid input: 56\n",
+      "returncode": 0
+    }
+  },
+  {
+    "benchmark": "m54",
+    "dot_states": 27,
+    "dot_transitions": 270,
+    "common_input_symbols": 10,
+    "reachable_nonerror_states_common_interface": 26,
+    "transition_targets": 260,
+    "tests": 690,
+    "input_steps": 2770,
+    "reference_failed_tests": 93,
+    "reference_first_failure": [
+      {
+        "test_index": 49,
+        "step": 1,
+        "inputs": [
+          "usr1_ni1_ne2",
+          "usr2_ai1_VoidReply"
+        ],
+        "expected_symbols": [
+          "usr2_ai1_ce1",
+          "none"
+        ],
+        "expected_code": 65,
+        "actual_code": 82
+      }
+    ],
+    "mutants": [],
+    "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+    "mutation_status": "blocked: model/C alignment failed",
+    "unmodified_C_reproduction": {
+      "stdout": "73\n",
+      "stderr": "Invalid input: 62\n",
+      "returncode": 0
+    }
+  },
+  {
+    "benchmark": "m76",
+    "dot_states": 210,
+    "dot_transitions": 5460,
+    "common_input_symbols": 25,
+    "reachable_nonerror_states_common_interface": 209,
+    "transition_targets": 5225,
+    "tests": 9350,
+    "input_steps": 100575,
+    "reference_failed_tests": 1380,
+    "reference_first_failure": [
+      {
+        "test_index": 191,
+        "step": 1,
+        "inputs": [
+          "ai3_ce2",
+          "usr3_ai3_re1"
+        ],
+        "expected_symbols": [
+          "usr3_ai3_ce3",
+          "usr4_ai1_ce1"
+        ],
+        "expected_code": 93,
+        "actual_code": 113
+      }
+    ],
+    "mutants": [],
+    "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+    "mutation_status": "blocked: model/C alignment failed",
+    "unmodified_C_reproduction": {
+      "stdout": "91\n",
+      "stderr": "Invalid input: 59\n",
+      "returncode": 0
+    }
+  }
+]

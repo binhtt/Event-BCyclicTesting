@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Automotive Pilot Headless Build
+Bundle-SymbolicName: automotive.pilot.headless;singleton:=true
+Bundle-Version: 1.0.0
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.equinox.app,org.rodinp.core,org.eventb.core,org.eventb.core.seqprover,org.eventb.core.ast
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+

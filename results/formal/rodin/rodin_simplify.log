@@ -1,0 +1,25 @@
+WARNING: Using incubator modules: jdk.incubator.foreign, jdk.incubator.vector
+RESULT C_AutomotivePilot 0/0
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+!SESSION 2026-10-02 15:28:25.143 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.20
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Framework arguments:  -application automotive.pilot.headless.build /workspace/scratch/744c1bbef7d6/automotive_step4/workspace3/AutomotivePilot
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -clean -consoleLog -application automotive.pilot.headless.build -data /workspace/scratch/744c1bbef7d6/automotive_step4/workspace11 /workspace/scratch/744c1bbef7d6/automotive_step4/workspace3/AutomotivePilot
+
+!ENTRY org.eclipse.osgi 4 0 2026-10-02 15:28:34.876
+!MESSAGE Application error
+!STACK 1
+java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-10-02 15:28:34.900
+!MESSAGE The workspace will exit with unsaved changes in this session.
+Rodin: Cannot open display: 
+Rodin:
+An error has occurred. See the log file
+/workspace/scratch/744c1bbef7d6/automotive_step4/workspace11/.metadata/.log.

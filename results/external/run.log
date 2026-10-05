@@ -1,0 +1,218 @@
+{
+  "benchmark": "m183",
+  "dot_states": 9,
+  "dot_transitions": 108,
+  "common_input_symbols": 5,
+  "reachable_nonerror_states_common_interface": 8,
+  "transition_targets": 40,
+  "tests": 70,
+  "input_steps": 255,
+  "reference_failed_tests": 0,
+  "reference_first_failure": [],
+  "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+  "mutant_counts": {
+    "killed": 22,
+    "survived": 7
+  },
+  "mutation_status": "completed"
+}
+{
+  "benchmark": "m158",
+  "dot_states": 28,
+  "dot_transitions": 3360,
+  "common_input_symbols": 17,
+  "reachable_nonerror_states_common_interface": 27,
+  "transition_targets": 459,
+  "tests": 629,
+  "input_steps": 3978,
+  "reference_failed_tests": 1,
+  "reference_first_failure": [
+    {
+      "test_index": 85,
+      "step": 3,
+      "inputs": [
+        "ai1_ce1",
+        "usr3_ai2_re2",
+        "usr1_ai1_VoidReply",
+        "ai1_ce1"
+      ],
+      "expected_symbols": [
+        "usr3_ai2_ce8",
+        "usr1_ai1_ce20",
+        "ai1_re3",
+        "usr3_ai2_ce8"
+      ],
+      "expected_code": 87,
+      "actual_code": 95
+    }
+  ],
+  "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+  "mutation_status": "blocked: model/C alignment failed"
+}
+{
+  "benchmark": "m164",
+  "dot_states": 43,
+  "dot_transitions": 4386,
+  "common_input_symbols": 22,
+  "reachable_nonerror_states_common_interface": 42,
+  "transition_targets": 924,
+  "tests": 1298,
+  "input_steps": 6050,
+  "reference_failed_tests": 1218,
+  "reference_first_failure": [
+    {
+      "test_index": 31,
+      "step": 1,
+      "inputs": [
+        "ai1_ce1",
+        "usr2_ai3_re1"
+      ],
+      "expected_symbols": [
+        "usr2_ai3_ce19",
+        "usr2_ai3_ce1"
+      ],
+      "expected_code": 85,
+      "actual_code": 98
+    }
+  ],
+  "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+  "mutation_status": "blocked: model/C alignment failed"
+}
+{
+  "benchmark": "m159",
+  "dot_states": 30,
+  "dot_transitions": 3600,
+  "common_input_symbols": 21,
+  "reachable_nonerror_states_common_interface": 29,
+  "transition_targets": 609,
+  "tests": 903,
+  "input_steps": 5838,
+  "reference_failed_tests": 0,
+  "reference_first_failure": [],
+  "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+  "mutant_counts": {
+    "killed": 23,
+    "survived": 7
+  },
+  "mutation_status": "completed"
+}
+{
+  "benchmark": "m135",
+  "dot_states": 57,
+  "dot_transitions": 10089,
+  "common_input_symbols": 27,
+  "reachable_nonerror_states_common_interface": 56,
+  "transition_targets": 1512,
+  "tests": 2646,
+  "input_steps": 33021,
+  "reference_failed_tests": 2,
+  "reference_first_failure": [
+    {
+      "test_index": 135,
+      "step": 3,
+      "inputs": [
+        "ai1_ce1",
+        "usr7_ai2_re2",
+        "usr1_ai1_VoidReply",
+        "ai1_ce1"
+      ],
+      "expected_symbols": [
+        "usr7_ai2_ce12",
+        "usr1_ai1_ce20",
+        "ai1_re3",
+        "usr7_ai2_ce12"
+      ],
+      "expected_code": 92,
+      "actual_code": 113
+    }
+  ],
+  "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+  "mutation_status": "blocked: model/C alignment failed"
+}
+{
+  "benchmark": "m55",
+  "dot_states": 181,
+  "dot_transitions": 28236,
+  "common_input_symbols": 18,
+  "reachable_nonerror_states_common_interface": 181,
+  "transition_targets": 3258,
+  "tests": 9306,
+  "input_steps": 184986,
+  "reference_failed_tests": 31,
+  "reference_first_failure": [
+    {
+      "test_index": 44,
+      "step": 1,
+      "inputs": [
+        "ai1_ce2",
+        "usr3_ai1_re1"
+      ],
+      "expected_symbols": [
+        "usr3_ai1_ce1",
+        "ni1_ne4__ai1_VoidReply"
+      ],
+      "expected_code": 78,
+      "actual_code": 95
+    }
+  ],
+  "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+  "mutation_status": "blocked: model/C alignment failed"
+}
+{
+  "benchmark": "m54",
+  "dot_states": 27,
+  "dot_transitions": 270,
+  "common_input_symbols": 10,
+  "reachable_nonerror_states_common_interface": 26,
+  "transition_targets": 260,
+  "tests": 690,
+  "input_steps": 2770,
+  "reference_failed_tests": 93,
+  "reference_first_failure": [
+    {
+      "test_index": 49,
+      "step": 1,
+      "inputs": [
+        "usr1_ni1_ne2",
+        "usr2_ai1_VoidReply"
+      ],
+      "expected_symbols": [
+        "usr2_ai1_ce1",
+        "none"
+      ],
+      "expected_code": 65,
+      "actual_code": 82
+    }
+  ],
+  "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+  "mutation_status": "blocked: model/C alignment failed"
+}
+{
+  "benchmark": "m76",
+  "dot_states": 210,
+  "dot_transitions": 5460,
+  "common_input_symbols": 25,
+  "reachable_nonerror_states_common_interface": 209,
+  "transition_targets": 5225,
+  "tests": 9350,
+  "input_steps": 100575,
+  "reference_failed_tests": 1380,
+  "reference_first_failure": [
+    {
+      "test_index": 191,
+      "step": 1,
+      "inputs": [
+        "ai3_ce2",
+        "usr3_ai3_re1"
+      ],
+      "expected_symbols": [
+        "usr3_ai3_ce3",
+        "usr4_ai1_ce1"
+      ],
+      "expected_code": 93,
+      "actual_code": 113
+    }
+  ],
+  "scope": "Common mapped input interface; stop at first error; transition targets + one input suffix; original RERS C instrumented for reset/output capture",
+  "mutation_status": "blocked: model/C alignment failed"
+}

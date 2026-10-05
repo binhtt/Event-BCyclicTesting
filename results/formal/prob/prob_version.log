@@ -1,0 +1,5 @@
+ProB Command Line Interface
+  VERSION 1.16.1-final (716929f528b333dd3901a0521fc0d3460a488af7)
+  Thu Aug 27 12:46:31 2026 +0200
+  Prolog (sicstus): SICStus 4.9.0 (x86_64-linux-glibc2.28): Fri Dec 15 10:08:12 UTC 2023
+  COMPILE TIME FLAGS: [prob_release]

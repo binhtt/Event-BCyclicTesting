@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="MODE" org.eventb.core.type="ℙ(MODE)"/>
+        <org.eventb.core.poIdentifier name="POS" org.eventb.core.type="ℙ(POS)"/>
+        <org.eventb.core.poIdentifier name="period" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="pLeft" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="noMode" org.eventb.core.type="MODE"/>
+        <org.eventb.core.poIdentifier name="rightMode" org.eventb.core.type="MODE"/>
+        <org.eventb.core.poIdentifier name="leftMode" org.eventb.core.type="MODE"/>
+        <org.eventb.core.poIdentifier name="pRight" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="pNeutral" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="ticks" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="bothMode" org.eventb.core.type="MODE"/>
+        <org.eventb.core.poIdentifier name="lampR" org.eventb.core.type="ℙ(MODE×BOOL×ℤ)"/>
+        <org.eventb.core.poIdentifier name="lampL" org.eventb.core.type="ℙ(MODE×BOOL×ℤ)"/>
+        <org.eventb.core.poIdentifier name="command" org.eventb.core.type="ℙ(BOOL×BOOL×POS×MODE)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/AutomotivePilot/C_AutomotivePilot.bpo|org.eventb.core.poFile#C_AutomotivePilot|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(POS,{pNeutral},{pLeft},{pRight})" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_pos"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="partition(MODE,{noMode},{leftMode},{rightMode},{bothMode})" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_mode"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="period∈ℕ1∧period=100" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_period"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="ticks∈ℕ1∧ticks=5" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_ticks"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="period∗ticks=500" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_duration"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="command∈BOOL × BOOL × POS → MODE" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_command_type"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="command={FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_command_value"/>
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="lampL∈MODE × BOOL → {0,100}" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_left_type"/>
+        <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="lampL={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_left_value"/>
+        <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="lampR∈MODE × BOOL → {0,100}" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_right_type"/>
+        <org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="lampR={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_right_value"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

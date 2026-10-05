@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="MODE" org.eventb.core.type="ℙ(MODE)"/>
+        <org.eventb.core.poIdentifier name="POS" org.eventb.core.type="ℙ(POS)"/>
+        <org.eventb.core.poIdentifier name="period" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="pLeft" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="noMode" org.eventb.core.type="MODE"/>
+        <org.eventb.core.poIdentifier name="rightMode" org.eventb.core.type="MODE"/>
+        <org.eventb.core.poIdentifier name="leftMode" org.eventb.core.type="MODE"/>
+        <org.eventb.core.poIdentifier name="pRight" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="pNeutral" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="ticks" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="bothMode" org.eventb.core.type="MODE"/>
+        <org.eventb.core.poIdentifier name="lampR" org.eventb.core.type="ℙ(MODE×BOOL×ℤ)"/>
+        <org.eventb.core.poIdentifier name="lampL" org.eventb.core.type="ℙ(MODE×BOOL×ℤ)"/>
+        <org.eventb.core.poIdentifier name="command" org.eventb.core.type="ℙ(BOOL×BOOL×POS×MODE)"/>
+        <org.eventb.core.poPredicate name="rightModf" org.eventb.core.predicate="partition(POS,{pNeutral},{pLeft},{pRight})" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_pos"/>
+        <org.eventb.core.poPredicate name="rightModg" org.eventb.core.predicate="partition(MODE,{noMode},{leftMode},{rightMode},{bothMode})" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_mode"/>
+        <org.eventb.core.poPredicate name="rightModh" org.eventb.core.predicate="period∈ℕ1∧period=100" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_period"/>
+        <org.eventb.core.poPredicate name="rightModi" org.eventb.core.predicate="ticks∈ℕ1∧ticks=5" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_ticks"/>
+        <org.eventb.core.poPredicate name="rightModj" org.eventb.core.predicate="period∗ticks=500" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_duration"/>
+        <org.eventb.core.poPredicate name="rightModk" org.eventb.core.predicate="command∈BOOL × BOOL × POS → MODE" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_command_type"/>
+        <org.eventb.core.poPredicate name="rightModl" org.eventb.core.predicate="command={FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_command_value"/>
+        <org.eventb.core.poPredicate name="rightModm" org.eventb.core.predicate="lampL∈MODE × BOOL → {0,100}" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_left_type"/>
+        <org.eventb.core.poPredicate name="rightModn" org.eventb.core.predicate="lampL={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_left_value"/>
+        <org.eventb.core.poPredicate name="rightModo" org.eventb.core.predicate="lampR∈MODE × BOOL → {0,100}" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_right_type"/>
+        <org.eventb.core.poPredicate name="rightModp" org.eventb.core.predicate="lampR={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}" org.eventb.core.source="/AutomotivePilot/C_AutomotivePilot.buc|org.eventb.core.contextFile#C_AutomotivePilot|org.eventb.core.axiom#axm_right_value"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="obsP" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="obsE" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="obsH" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="active" org.eventb.core.type="MODE"/>
+        <org.eventb.core.poIdentifier name="envH" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="envE" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="blinkLeft" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="envP" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="on" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="remaining" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="blinkRight" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="inv_command/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="obsE ↦ obsH ↦ obsP∈dom(command)∧command∈BOOL × BOOL × POS ⇸ MODE" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_command"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_command"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp'"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="inv_outputL/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp)"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="active ↦ on∈dom(lampL)∧lampL∈MODE × BOOL ⇸ ℤ" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputL"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputL"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp)"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="inv_outputR/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp*"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="active ↦ on∈dom(lampR)∧lampR∈MODE × BOOL ⇸ ℤ" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputR"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputR"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp*"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv_remaining/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ ticks − 1" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_remaining"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_remaining"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#INITIALISATION\/inv_remaining\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp'|org.eventb.core.poPredicate#PRD8"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv_left/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈{0,100}" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_left"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_left"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#INITIALISATION\/inv_left\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp'|org.eventb.core.poPredicate#PRD9"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv_right/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈{0,100}" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_right"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_right"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#INITIALISATION\/inv_right\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp'|org.eventb.core.poPredicate#PRD10"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv_command/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="noMode=command(FALSE ↦ FALSE ↦ pNeutral)" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_command"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_command"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#INITIALISATION\/inv_command\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp)|org.eventb.core.poPredicate#PRD11"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv_none/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="noMode=noMode⇒FALSE=FALSE∧0=0" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_none"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_none"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#INITIALISATION\/inv_none\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp)|org.eventb.core.poPredicate#PRD12"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv_outputL/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0=lampL(noMode ↦ FALSE)" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputL"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputL"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#INITIALISATION\/inv_outputL\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp*|org.eventb.core.poPredicate#PRD13"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv_outputR/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0=lampR(noMode ↦ FALSE)" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputR"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputR"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#INITIALISATION\/inv_outputR\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD14"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv_hazard/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇒noMode=bothMode" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_hazard"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_hazard"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#INITIALISATION\/inv_hazard\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD15"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv_engine/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=FALSE∧FALSE=FALSE⇒noMode=noMode" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_engine"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_engine"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#INITIALISATION\/inv_engine\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD16"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv_sync/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="noMode=bothMode⇒0=0" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_sync"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_sync"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#INITIALISATION\/inv_sync\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD17"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv_phaseoff/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=FALSE⇒0=0∧0=0" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_phaseoff"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_phaseoff"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#INITIALISATION\/inv_phaseoff\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD18"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv_leftactive/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0=100⇒noMode∈{leftMode,bothMode}" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_leftactive"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_leftactive"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#INITIALISATION\/inv_leftactive\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD19"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv_rightactive/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0=100⇒noMode∈{rightMode,bothMode}" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_rightactive"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_rightactive"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#INITIALISATION\/inv_rightactive\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD20"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTC_AutomotivePilp2" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="remaining'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="obsE'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="envE'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="blinkRight'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="blinkLeft'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="obsH'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="active'" org.eventb.core.type="MODE"/>
+        <org.eventb.core.poIdentifier name="on'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="envP'" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="obsP'" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="envH'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC_AutomotivePilp2" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTIDENTC_AutomotivePilp2" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTC_AutomotivePilp3" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="envE'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="h" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="p" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="e" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="envP'" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="envH'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC_AutomotivePilp3" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTIDENTC_AutomotivePilp3" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="e∈BOOL" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev1|org.eventb.core.guard#g0"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="h∈BOOL" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev1|org.eventb.core.guard#g1"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="p∈POS" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev1|org.eventb.core.guard#g2"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="Cycle/grd7/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTHYPC_AutomotivePilp4,"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="e ↦ h ↦ p∈dom(command)∧command∈BOOL × BOOL × POS ⇸ MODE" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2|org.eventb.core.guard#g6"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2|org.eventb.core.guard#g6"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTHYPC_AutomotivePilp4,"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/inv_remaining/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="r∈0 ‥ ticks − 1" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_remaining"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_remaining"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#Cycle\/inv_remaining\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp'|org.eventb.core.poPredicate#PRD8"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/inv_left/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lampL(m ↦ b)∈{0,100}" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_left"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_left"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#Cycle\/inv_left\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp'|org.eventb.core.poPredicate#PRD9"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/inv_right/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lampR(m ↦ b)∈{0,100}" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_right"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_right"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#Cycle\/inv_right\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp'|org.eventb.core.poPredicate#PRD10"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/inv_command/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="m=command(e ↦ h ↦ p)" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_command"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_command"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#Cycle\/inv_command\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp)|org.eventb.core.poPredicate#PRD11"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/inv_none/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="m=noMode⇒b=FALSE∧r=0" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_none"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_none"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#Cycle\/inv_none\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp)|org.eventb.core.poPredicate#PRD12"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/inv_outputL/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lampL(m ↦ b)=lampL(m ↦ b)" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputL"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputL"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#Cycle\/inv_outputL\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp*|org.eventb.core.poPredicate#PRD13"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/inv_outputR/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lampR(m ↦ b)=lampR(m ↦ b)" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputR"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputR"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#Cycle\/inv_outputR\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD14"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/inv_hazard/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="h=TRUE⇒m=bothMode" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_hazard"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_hazard"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#Cycle\/inv_hazard\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD15"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/inv_engine/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="e=FALSE∧h=FALSE⇒m=noMode" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_engine"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_engine"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#Cycle\/inv_engine\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD16"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/inv_sync/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="m=bothMode⇒lampL(m ↦ b)=lampR(m ↦ b)" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_sync"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_sync"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#Cycle\/inv_sync\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD17"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/inv_phaseoff/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b=FALSE⇒lampL(m ↦ b)=0∧lampR(m ↦ b)=0" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_phaseoff"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_phaseoff"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#Cycle\/inv_phaseoff\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD18"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/inv_leftactive/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lampL(m ↦ b)=100⇒m∈{leftMode,bothMode}" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_leftactive"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_leftactive"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#Cycle\/inv_leftactive\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD19"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/inv_rightactive/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lampR(m ↦ b)=100⇒m∈{rightMode,bothMode}" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_rightactive"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_rightactive"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poSequent#Cycle\/inv_rightactive\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD20"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/act7/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="m ↦ b∈dom(lampL)∧lampL∈MODE × BOOL ⇸ ℤ" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2|org.eventb.core.action#a6"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2|org.eventb.core.action#a6"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Cycle/act8/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="m ↦ b∈dom(lampR)∧lampR∈MODE × BOOL ⇸ ℤ" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2|org.eventb.core.action#a7"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2|org.eventb.core.action#a7"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTALLHYPC_AutomotivePilp4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTC_AutomotivePilp4" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="remaining'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="obsE'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="r" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="blinkRight'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="blinkLeft'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="obsH'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="h" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="p" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="active'" org.eventb.core.type="MODE"/>
+        <org.eventb.core.poIdentifier name="on'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="e" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="obsP'" org.eventb.core.type="POS"/>
+        <org.eventb.core.poIdentifier name="m" org.eventb.core.type="MODE"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPC_AutomotivePilp4," org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTIDENTC_AutomotivePilp4" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="e∈BOOL" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2|org.eventb.core.guard#g0"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="h∈BOOL" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2|org.eventb.core.guard#g1"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="p∈POS" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2|org.eventb.core.guard#g2"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="m∈MODE" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2|org.eventb.core.guard#g3"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="b∈BOOL" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2|org.eventb.core.guard#g4"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="r∈0 ‥ ticks − 1" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2|org.eventb.core.guard#g5"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC_AutomotivePilp4" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#EVTHYPC_AutomotivePilp4," org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="m=command(e ↦ h ↦ p)∧((m=noMode∧b=FALSE∧r=0)∨(m≠noMode∧active=noMode∧b=TRUE∧r=ticks − 1)∨(m≠noMode∧active≠noMode∧remaining&gt;0∧b=on∧r=remaining − 1)∨(m≠noMode∧active≠noMode∧remaining=0∧b=bool(on=FALSE)∧r=ticks − 1))" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.event#ev2|org.eventb.core.guard#g6"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="HYPC_AutomotivePilp'" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="envE∈BOOL" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_envE"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="envH∈BOOL" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_envH"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="envP∈POS" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_envP"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="obsE∈BOOL" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_obsE"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="obsH∈BOOL" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_obsH"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="obsP∈POS" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_obsP"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="active∈MODE" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_active"/>
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="on∈BOOL" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_on"/>
+        <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="remaining∈0 ‥ ticks − 1" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_remaining"/>
+        <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="blinkLeft∈{0,100}" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_left"/>
+        <org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="blinkRight∈{0,100}" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_right"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="HYPC_AutomotivePilp)" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp'" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="active=command(obsE ↦ obsH ↦ obsP)" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_command"/>
+        <org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="active=noMode⇒on=FALSE∧remaining=0" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_none"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="HYPC_AutomotivePilp*" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp)" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="blinkLeft=lampL(active ↦ on)" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/AutomotivePilot/M0_AtomicCycle.bpo|org.eventb.core.poFile#M0_AtomicCycle|org.eventb.core.poPredicateSet#HYPC_AutomotivePilp*" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="blinkRight=lampR(active ↦ on)" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_outputR"/>
+        <org.eventb.core.poPredicate name="PRD15" org.eventb.core.predicate="obsH=TRUE⇒active=bothMode" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_hazard"/>
+        <org.eventb.core.poPredicate name="PRD16" org.eventb.core.predicate="obsE=FALSE∧obsH=FALSE⇒active=noMode" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_engine"/>
+        <org.eventb.core.poPredicate name="PRD17" org.eventb.core.predicate="active=bothMode⇒blinkLeft=blinkRight" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_sync"/>
+        <org.eventb.core.poPredicate name="PRD18" org.eventb.core.predicate="on=FALSE⇒blinkLeft=0∧blinkRight=0" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_phaseoff"/>
+        <org.eventb.core.poPredicate name="PRD19" org.eventb.core.predicate="blinkLeft=100⇒active∈{leftMode,bothMode}" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_leftactive"/>
+        <org.eventb.core.poPredicate name="PRD20" org.eventb.core.predicate="blinkRight=100⇒active∈{rightMode,bothMode}" org.eventb.core.source="/AutomotivePilot/M0_AtomicCycle.bum|org.eventb.core.machineFile#M0_AtomicCycle|org.eventb.core.invariant#inv_rightactive"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

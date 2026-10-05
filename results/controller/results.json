@@ -1,0 +1,147 @@
+{
+  "oracle": "Four-disjunct finite relation transcription; command/lamp tables parsed from Event-B XML",
+  "sut": "Independent procedural C research pilot, compiled with gcc",
+  "observable_oracle": "left/right lamps after Emit; no output update before Emit",
+  "reachable_core_states": 31,
+  "core_transition_targets": 372,
+  "core_transition_target_coverage": 1.0,
+  "schedule_profiles": 3,
+  "generated_tests": 1116,
+  "suite_cycle_steps": 18216,
+  "reference_failures": 0,
+  "exhaustive_target_schedule_runs": 53568,
+  "exhaustive_reference_failures": 0,
+  "mutants": 12,
+  "killed_mutants": 12,
+  "mutation_score": 1.0,
+  "stable_only_killed_mutants": 10,
+  "mutant_results": [
+    {
+      "mutant": "short_phase_4",
+      "failed_tests": 960,
+      "total_tests": 1116,
+      "failed_tests_by_profile": {
+        "stable": 320,
+        "after_sample": 320,
+        "both_gaps": 320
+      }
+    },
+    {
+      "mutant": "long_phase_6",
+      "failed_tests": 924,
+      "total_tests": 1116,
+      "failed_tests_by_profile": {
+        "stable": 308,
+        "after_sample": 308,
+        "both_gaps": 308
+      }
+    },
+    {
+      "mutant": "direction_over_hazard",
+      "failed_tests": 186,
+      "total_tests": 1116,
+      "failed_tests_by_profile": {
+        "stable": 62,
+        "after_sample": 62,
+        "both_gaps": 62
+      }
+    },
+    {
+      "mutant": "engine_blocks_hazard",
+      "failed_tests": 1035,
+      "total_tests": 1116,
+      "failed_tests_by_profile": {
+        "stable": 345,
+        "after_sample": 345,
+        "both_gaps": 345
+      }
+    },
+    {
+      "mutant": "reset_on_mode_change",
+      "failed_tests": 648,
+      "total_tests": 1116,
+      "failed_tests_by_profile": {
+        "stable": 216,
+        "after_sample": 216,
+        "both_gaps": 216
+      }
+    },
+    {
+      "mutant": "read_live_at_decide",
+      "failed_tests": 480,
+      "total_tests": 1116,
+      "failed_tests_by_profile": {
+        "stable": 0,
+        "after_sample": 240,
+        "both_gaps": 240
+      }
+    },
+    {
+      "mutant": "read_live_at_emit",
+      "failed_tests": 240,
+      "total_tests": 1116,
+      "failed_tests_by_profile": {
+        "stable": 0,
+        "after_sample": 0,
+        "both_gaps": 240
+      }
+    },
+    {
+      "mutant": "publish_at_decide",
+      "failed_tests": 1104,
+      "total_tests": 1116,
+      "failed_tests_by_profile": {
+        "stable": 368,
+        "after_sample": 368,
+        "both_gaps": 368
+      }
+    },
+    {
+      "mutant": "swap_lamps",
+      "failed_tests": 486,
+      "total_tests": 1116,
+      "failed_tests_by_profile": {
+        "stable": 162,
+        "after_sample": 162,
+        "both_gaps": 162
+      }
+    },
+    {
+      "mutant": "use_previous_mode_for_output",
+      "failed_tests": 1104,
+      "total_tests": 1116,
+      "failed_tests_by_profile": {
+        "stable": 368,
+        "after_sample": 368,
+        "both_gaps": 368
+      }
+    },
+    {
+      "mutant": "ignore_hazard",
+      "failed_tests": 1062,
+      "total_tests": 1116,
+      "failed_tests_by_profile": {
+        "stable": 354,
+        "after_sample": 354,
+        "both_gaps": 354
+      }
+    },
+    {
+      "mutant": "hazard_right_dark",
+      "failed_tests": 1062,
+      "total_tests": 1116,
+      "failed_tests_by_profile": {
+        "stable": 354,
+        "after_sample": 354,
+        "both_gaps": 354
+      }
+    }
+  ],
+  "elapsed_seconds": 0.834,
+  "scope": "Finite core projection of this pilot; not full M1 event graph coverage, native model execution or production-system evidence",
+  "rodin_proof_status": {
+    "closed": 67,
+    "total": 89,
+    "pending": 22
+  }
+}

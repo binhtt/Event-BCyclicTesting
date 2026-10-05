@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+  <org.eventb.core.refinesMachine name="ref" org.eventb.core.target="M0_AtomicCycle" />
+  <org.eventb.core.seesContext name="see" org.eventb.core.target="C_AutomotivePilot" />
+  <org.eventb.core.variable name="v0" org.eventb.core.identifier="envE" />
+  <org.eventb.core.variable name="v1" org.eventb.core.identifier="envH" />
+  <org.eventb.core.variable name="v2" org.eventb.core.identifier="envP" />
+  <org.eventb.core.variable name="v3" org.eventb.core.identifier="obsE" />
+  <org.eventb.core.variable name="v4" org.eventb.core.identifier="obsH" />
+  <org.eventb.core.variable name="v5" org.eventb.core.identifier="obsP" />
+  <org.eventb.core.variable name="v6" org.eventb.core.identifier="active" />
+  <org.eventb.core.variable name="v7" org.eventb.core.identifier="on" />
+  <org.eventb.core.variable name="v8" org.eventb.core.identifier="remaining" />
+  <org.eventb.core.variable name="v9" org.eventb.core.identifier="blinkLeft" />
+  <org.eventb.core.variable name="v10" org.eventb.core.identifier="blinkRight" />
+  <org.eventb.core.variable name="v11" org.eventb.core.identifier="stage" />
+  <org.eventb.core.variable name="v12" org.eventb.core.identifier="sE" />
+  <org.eventb.core.variable name="v13" org.eventb.core.identifier="sH" />
+  <org.eventb.core.variable name="v14" org.eventb.core.identifier="sP" />
+  <org.eventb.core.variable name="v15" org.eventb.core.identifier="nextMode" />
+  <org.eventb.core.variable name="v16" org.eventb.core.identifier="nextOn" />
+  <org.eventb.core.variable name="v17" org.eventb.core.identifier="nextRemaining" />
+  <org.eventb.core.invariant name="inv_envE" org.eventb.core.label="inv_envE" org.eventb.core.predicate="envE ∈ BOOL" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_envH" org.eventb.core.label="inv_envH" org.eventb.core.predicate="envH ∈ BOOL" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_envP" org.eventb.core.label="inv_envP" org.eventb.core.predicate="envP ∈ POS" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_obsE" org.eventb.core.label="inv_obsE" org.eventb.core.predicate="obsE ∈ BOOL" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_obsH" org.eventb.core.label="inv_obsH" org.eventb.core.predicate="obsH ∈ BOOL" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_obsP" org.eventb.core.label="inv_obsP" org.eventb.core.predicate="obsP ∈ POS" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_active" org.eventb.core.label="inv_active" org.eventb.core.predicate="active ∈ MODE" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_on" org.eventb.core.label="inv_on" org.eventb.core.predicate="on ∈ BOOL" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_remaining" org.eventb.core.label="inv_remaining" org.eventb.core.predicate="remaining ∈ 0‥(ticks − 1)" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_left" org.eventb.core.label="inv_left" org.eventb.core.predicate="blinkLeft ∈ {0, 100}" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_right" org.eventb.core.label="inv_right" org.eventb.core.predicate="blinkRight ∈ {0, 100}" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_command" org.eventb.core.label="inv_command" org.eventb.core.predicate="active = command((obsE ↦ obsH) ↦ obsP)" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_none" org.eventb.core.label="inv_none" org.eventb.core.predicate="active = noMode ⇒ (on = FALSE ∧ remaining = 0)" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_outputL" org.eventb.core.label="inv_outputL" org.eventb.core.predicate="blinkLeft = lampL(active ↦ on)" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_outputR" org.eventb.core.label="inv_outputR" org.eventb.core.predicate="blinkRight = lampR(active ↦ on)" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_hazard" org.eventb.core.label="inv_hazard" org.eventb.core.predicate="obsH = TRUE ⇒ active = bothMode" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_engine" org.eventb.core.label="inv_engine" org.eventb.core.predicate="obsE = FALSE ∧ obsH = FALSE ⇒ active = noMode" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_sync" org.eventb.core.label="inv_sync" org.eventb.core.predicate="active = bothMode ⇒ blinkLeft = blinkRight" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_phaseoff" org.eventb.core.label="inv_phaseoff" org.eventb.core.predicate="on = FALSE ⇒ (blinkLeft = 0 ∧ blinkRight = 0)" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_leftactive" org.eventb.core.label="inv_leftactive" org.eventb.core.predicate="blinkLeft = 100 ⇒ active ∈ {leftMode, bothMode}" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_rightactive" org.eventb.core.label="inv_rightactive" org.eventb.core.predicate="blinkRight = 100 ⇒ active ∈ {rightMode, bothMode}" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_stage" org.eventb.core.label="inv_stage" org.eventb.core.predicate="stage ∈ 0‥2" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_sE" org.eventb.core.label="inv_sE" org.eventb.core.predicate="sE ∈ BOOL" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_sH" org.eventb.core.label="inv_sH" org.eventb.core.predicate="sH ∈ BOOL" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_sP" org.eventb.core.label="inv_sP" org.eventb.core.predicate="sP ∈ POS" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_nextMode" org.eventb.core.label="inv_nextMode" org.eventb.core.predicate="nextMode ∈ MODE" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_nextOn" org.eventb.core.label="inv_nextOn" org.eventb.core.predicate="nextOn ∈ BOOL" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_nextRemaining" org.eventb.core.label="inv_nextRemaining" org.eventb.core.predicate="nextRemaining ∈ 0‥(ticks − 1)" org.eventb.core.theorem="false" />
+  <org.eventb.core.invariant name="inv_pending" org.eventb.core.label="inv_pending" org.eventb.core.predicate="stage = 2 ⇒ (nextMode = command((sE ↦ sH) ↦ sP) ∧ ((nextMode = noMode ∧ nextOn = FALSE ∧ nextRemaining = 0) ∨ (nextMode ≠ noMode ∧ active = noMode ∧ nextOn = TRUE ∧ nextRemaining = ticks − 1) ∨ (nextMode ≠ noMode ∧ active ≠ noMode ∧ remaining &gt; 0 ∧ nextOn = on ∧ nextRemaining = remaining − 1) ∨ (nextMode ≠ noMode ∧ active ≠ noMode ∧ remaining = 0 ∧ nextOn = bool(on = FALSE) ∧ nextRemaining = ticks − 1)))" org.eventb.core.theorem="false" />
+  <org.eventb.core.variant name="variant" org.eventb.core.expression="2 − stage" />
+  <org.eventb.core.event name="ev0" org.eventb.core.label="INITIALISATION" org.eventb.core.convergence="0" org.eventb.core.extended="false">
+    <org.eventb.core.action name="a0" org.eventb.core.label="act1" org.eventb.core.assignment="envE ≔ FALSE" />
+    <org.eventb.core.action name="a1" org.eventb.core.label="act2" org.eventb.core.assignment="envH ≔ FALSE" />
+    <org.eventb.core.action name="a2" org.eventb.core.label="act3" org.eventb.core.assignment="envP ≔ pNeutral" />
+    <org.eventb.core.action name="a3" org.eventb.core.label="act4" org.eventb.core.assignment="obsE ≔ FALSE" />
+    <org.eventb.core.action name="a4" org.eventb.core.label="act5" org.eventb.core.assignment="obsH ≔ FALSE" />
+    <org.eventb.core.action name="a5" org.eventb.core.label="act6" org.eventb.core.assignment="obsP ≔ pNeutral" />
+    <org.eventb.core.action name="a6" org.eventb.core.label="act7" org.eventb.core.assignment="active ≔ noMode" />
+    <org.eventb.core.action name="a7" org.eventb.core.label="act8" org.eventb.core.assignment="on ≔ FALSE" />
+    <org.eventb.core.action name="a8" org.eventb.core.label="act9" org.eventb.core.assignment="remaining ≔ 0" />
+    <org.eventb.core.action name="a9" org.eventb.core.label="act10" org.eventb.core.assignment="blinkLeft ≔ 0" />
+    <org.eventb.core.action name="a10" org.eventb.core.label="act11" org.eventb.core.assignment="blinkRight ≔ 0" />
+    <org.eventb.core.action name="a11" org.eventb.core.label="act12" org.eventb.core.assignment="stage ≔ 0" />
+    <org.eventb.core.action name="a12" org.eventb.core.label="act13" org.eventb.core.assignment="sE ≔ FALSE" />
+    <org.eventb.core.action name="a13" org.eventb.core.label="act14" org.eventb.core.assignment="sH ≔ FALSE" />
+    <org.eventb.core.action name="a14" org.eventb.core.label="act15" org.eventb.core.assignment="sP ≔ pNeutral" />
+    <org.eventb.core.action name="a15" org.eventb.core.label="act16" org.eventb.core.assignment="nextMode ≔ noMode" />
+    <org.eventb.core.action name="a16" org.eventb.core.label="act17" org.eventb.core.assignment="nextOn ≔ FALSE" />
+    <org.eventb.core.action name="a17" org.eventb.core.label="act18" org.eventb.core.assignment="nextRemaining ≔ 0" />
+  </org.eventb.core.event>
+  <org.eventb.core.event name="ev1" org.eventb.core.label="Environment" org.eventb.core.convergence="0" org.eventb.core.extended="false">
+    <org.eventb.core.refinesEvent name="ref" org.eventb.core.target="Environment" />
+    <org.eventb.core.parameter name="p0" org.eventb.core.identifier="e" />
+    <org.eventb.core.parameter name="p1" org.eventb.core.identifier="h" />
+    <org.eventb.core.parameter name="p2" org.eventb.core.identifier="p" />
+    <org.eventb.core.guard name="g0" org.eventb.core.label="grd1" org.eventb.core.predicate="e ∈ BOOL" org.eventb.core.theorem="false" />
+    <org.eventb.core.guard name="g1" org.eventb.core.label="grd2" org.eventb.core.predicate="h ∈ BOOL" org.eventb.core.theorem="false" />
+    <org.eventb.core.guard name="g2" org.eventb.core.label="grd3" org.eventb.core.predicate="p ∈ POS" org.eventb.core.theorem="false" />
+    <org.eventb.core.action name="a0" org.eventb.core.label="act1" org.eventb.core.assignment="envE ≔ e" />
+    <org.eventb.core.action name="a1" org.eventb.core.label="act2" org.eventb.core.assignment="envH ≔ h" />
+    <org.eventb.core.action name="a2" org.eventb.core.label="act3" org.eventb.core.assignment="envP ≔ p" />
+  </org.eventb.core.event>
+  <org.eventb.core.event name="ev2" org.eventb.core.label="Sample" org.eventb.core.convergence="1" org.eventb.core.extended="false">
+    <org.eventb.core.guard name="g0" org.eventb.core.label="grd1" org.eventb.core.predicate="stage = 0" org.eventb.core.theorem="false" />
+    <org.eventb.core.action name="a0" org.eventb.core.label="act1" org.eventb.core.assignment="sE ≔ envE" />
+    <org.eventb.core.action name="a1" org.eventb.core.label="act2" org.eventb.core.assignment="sH ≔ envH" />
+    <org.eventb.core.action name="a2" org.eventb.core.label="act3" org.eventb.core.assignment="sP ≔ envP" />
+    <org.eventb.core.action name="a3" org.eventb.core.label="act4" org.eventb.core.assignment="stage ≔ 1" />
+  </org.eventb.core.event>
+  <org.eventb.core.event name="ev3" org.eventb.core.label="Decide" org.eventb.core.convergence="1" org.eventb.core.extended="false">
+    <org.eventb.core.parameter name="p0" org.eventb.core.identifier="m" />
+    <org.eventb.core.parameter name="p1" org.eventb.core.identifier="b" />
+    <org.eventb.core.parameter name="p2" org.eventb.core.identifier="r" />
+    <org.eventb.core.guard name="g0" org.eventb.core.label="grd1" org.eventb.core.predicate="stage = 1" org.eventb.core.theorem="false" />
+    <org.eventb.core.guard name="g1" org.eventb.core.label="grd2" org.eventb.core.predicate="m ∈ MODE" org.eventb.core.theorem="false" />
+    <org.eventb.core.guard name="g2" org.eventb.core.label="grd3" org.eventb.core.predicate="b ∈ BOOL" org.eventb.core.theorem="false" />
+    <org.eventb.core.guard name="g3" org.eventb.core.label="grd4" org.eventb.core.predicate="r ∈ 0‥(ticks − 1)" org.eventb.core.theorem="false" />
+    <org.eventb.core.guard name="g4" org.eventb.core.label="grd5" org.eventb.core.predicate="m = command((sE ↦ sH) ↦ sP) ∧ ((m = noMode ∧ b = FALSE ∧ r = 0) ∨ (m ≠ noMode ∧ active = noMode ∧ b = TRUE ∧ r = ticks − 1) ∨ (m ≠ noMode ∧ active ≠ noMode ∧ remaining &gt; 0 ∧ b = on ∧ r = remaining − 1) ∨ (m ≠ noMode ∧ active ≠ noMode ∧ remaining = 0 ∧ b = bool(on = FALSE) ∧ r = ticks − 1))" org.eventb.core.theorem="false" />
+    <org.eventb.core.action name="a0" org.eventb.core.label="act1" org.eventb.core.assignment="nextMode ≔ m" />
+    <org.eventb.core.action name="a1" org.eventb.core.label="act2" org.eventb.core.assignment="nextOn ≔ b" />
+    <org.eventb.core.action name="a2" org.eventb.core.label="act3" org.eventb.core.assignment="nextRemaining ≔ r" />
+    <org.eventb.core.action name="a3" org.eventb.core.label="act4" org.eventb.core.assignment="stage ≔ 2" />
+  </org.eventb.core.event>
+  <org.eventb.core.event name="ev4" org.eventb.core.label="Emit" org.eventb.core.convergence="0" org.eventb.core.extended="false">
+    <org.eventb.core.refinesEvent name="ref" org.eventb.core.target="Cycle" />
+    <org.eventb.core.guard name="g0" org.eventb.core.label="grd1" org.eventb.core.predicate="stage = 2" org.eventb.core.theorem="false" />
+    <org.eventb.core.witness name="w_e" org.eventb.core.label="e" org.eventb.core.predicate="e = sE" />
+    <org.eventb.core.witness name="w_h" org.eventb.core.label="h" org.eventb.core.predicate="h = sH" />
+    <org.eventb.core.witness name="w_p" org.eventb.core.label="p" org.eventb.core.predicate="p = sP" />
+    <org.eventb.core.witness name="w_m" org.eventb.core.label="m" org.eventb.core.predicate="m = nextMode" />
+    <org.eventb.core.witness name="w_b" org.eventb.core.label="b" org.eventb.core.predicate="b = nextOn" />
+    <org.eventb.core.witness name="w_r" org.eventb.core.label="r" org.eventb.core.predicate="r = nextRemaining" />
+    <org.eventb.core.action name="a0" org.eventb.core.label="act1" org.eventb.core.assignment="obsE ≔ sE" />
+    <org.eventb.core.action name="a1" org.eventb.core.label="act2" org.eventb.core.assignment="obsH ≔ sH" />
+    <org.eventb.core.action name="a2" org.eventb.core.label="act3" org.eventb.core.assignment="obsP ≔ sP" />
+    <org.eventb.core.action name="a3" org.eventb.core.label="act4" org.eventb.core.assignment="active ≔ nextMode" />
+    <org.eventb.core.action name="a4" org.eventb.core.label="act5" org.eventb.core.assignment="on ≔ nextOn" />
+    <org.eventb.core.action name="a5" org.eventb.core.label="act6" org.eventb.core.assignment="remaining ≔ nextRemaining" />
+    <org.eventb.core.action name="a6" org.eventb.core.label="act7" org.eventb.core.assignment="blinkLeft ≔ lampL(nextMode ↦ nextOn)" />
+    <org.eventb.core.action name="a7" org.eventb.core.label="act8" org.eventb.core.assignment="blinkRight ≔ lampR(nextMode ↦ nextOn)" />
+    <org.eventb.core.action name="a8" org.eventb.core.label="act9" org.eventb.core.assignment="stage ≔ 0" />
+  </org.eventb.core.event>
+</org.eventb.core.machineFile>

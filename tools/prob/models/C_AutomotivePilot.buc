@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+  <org.eventb.core.carrierSet name="s0" org.eventb.core.identifier="POS" />
+  <org.eventb.core.carrierSet name="s1" org.eventb.core.identifier="MODE" />
+  <org.eventb.core.constant name="c0" org.eventb.core.identifier="pNeutral" />
+  <org.eventb.core.constant name="c1" org.eventb.core.identifier="pLeft" />
+  <org.eventb.core.constant name="c2" org.eventb.core.identifier="pRight" />
+  <org.eventb.core.constant name="c3" org.eventb.core.identifier="noMode" />
+  <org.eventb.core.constant name="c4" org.eventb.core.identifier="leftMode" />
+  <org.eventb.core.constant name="c5" org.eventb.core.identifier="rightMode" />
+  <org.eventb.core.constant name="c6" org.eventb.core.identifier="bothMode" />
+  <org.eventb.core.constant name="c7" org.eventb.core.identifier="period" />
+  <org.eventb.core.constant name="c8" org.eventb.core.identifier="ticks" />
+  <org.eventb.core.constant name="c9" org.eventb.core.identifier="command" />
+  <org.eventb.core.constant name="c10" org.eventb.core.identifier="lampL" />
+  <org.eventb.core.constant name="c11" org.eventb.core.identifier="lampR" />
+  <org.eventb.core.axiom name="axm_pos" org.eventb.core.label="axm_pos" org.eventb.core.predicate="partition(POS, {pNeutral}, {pLeft}, {pRight})" org.eventb.core.theorem="false" />
+  <org.eventb.core.axiom name="axm_mode" org.eventb.core.label="axm_mode" org.eventb.core.predicate="partition(MODE, {noMode}, {leftMode}, {rightMode}, {bothMode})" org.eventb.core.theorem="false" />
+  <org.eventb.core.axiom name="axm_period" org.eventb.core.label="axm_period" org.eventb.core.predicate="period ∈ ℕ1 ∧ period = 100" org.eventb.core.theorem="false" />
+  <org.eventb.core.axiom name="axm_ticks" org.eventb.core.label="axm_ticks" org.eventb.core.predicate="ticks ∈ ℕ1 ∧ ticks = 5" org.eventb.core.theorem="false" />
+  <org.eventb.core.axiom name="axm_duration" org.eventb.core.label="axm_duration" org.eventb.core.predicate="period ∗ ticks = 500" org.eventb.core.theorem="false" />
+  <org.eventb.core.axiom name="axm_command_type" org.eventb.core.label="axm_command_type" org.eventb.core.predicate="command ∈ ((BOOL × BOOL) × POS) → MODE" org.eventb.core.theorem="false" />
+  <org.eventb.core.axiom name="axm_command_value" org.eventb.core.label="axm_command_value" org.eventb.core.predicate="command = {(((FALSE ↦ FALSE) ↦ pNeutral) ↦ noMode), (((FALSE ↦ FALSE) ↦ pLeft) ↦ noMode), (((FALSE ↦ FALSE) ↦ pRight) ↦ noMode), (((FALSE ↦ TRUE) ↦ pNeutral) ↦ bothMode), (((FALSE ↦ TRUE) ↦ pLeft) ↦ bothMode), (((FALSE ↦ TRUE) ↦ pRight) ↦ bothMode), (((TRUE ↦ FALSE) ↦ pNeutral) ↦ noMode), (((TRUE ↦ FALSE) ↦ pLeft) ↦ leftMode), (((TRUE ↦ FALSE) ↦ pRight) ↦ rightMode), (((TRUE ↦ TRUE) ↦ pNeutral) ↦ bothMode), (((TRUE ↦ TRUE) ↦ pLeft) ↦ bothMode), (((TRUE ↦ TRUE) ↦ pRight) ↦ bothMode)}" org.eventb.core.theorem="false" />
+  <org.eventb.core.axiom name="axm_left_type" org.eventb.core.label="axm_left_type" org.eventb.core.predicate="lampL ∈ (MODE × BOOL) → {0, 100}" org.eventb.core.theorem="false" />
+  <org.eventb.core.axiom name="axm_left_value" org.eventb.core.label="axm_left_value" org.eventb.core.predicate="lampL = {((noMode ↦ FALSE) ↦ 0), ((noMode ↦ TRUE) ↦ 0), ((leftMode ↦ FALSE) ↦ 0), ((leftMode ↦ TRUE) ↦ 100), ((rightMode ↦ FALSE) ↦ 0), ((rightMode ↦ TRUE) ↦ 0), ((bothMode ↦ FALSE) ↦ 0), ((bothMode ↦ TRUE) ↦ 100)}" org.eventb.core.theorem="false" />
+  <org.eventb.core.axiom name="axm_right_type" org.eventb.core.label="axm_right_type" org.eventb.core.predicate="lampR ∈ (MODE × BOOL) → {0, 100}" org.eventb.core.theorem="false" />
+  <org.eventb.core.axiom name="axm_right_value" org.eventb.core.label="axm_right_value" org.eventb.core.predicate="lampR = {((noMode ↦ FALSE) ↦ 0), ((noMode ↦ TRUE) ↦ 0), ((leftMode ↦ FALSE) ↦ 0), ((leftMode ↦ TRUE) ↦ 0), ((rightMode ↦ FALSE) ↦ 0), ((rightMode ↦ TRUE) ↦ 100), ((bothMode ↦ FALSE) ↦ 0), ((bothMode ↦ TRUE) ↦ 100)}" org.eventb.core.theorem="false" />
+</org.eventb.core.contextFile>

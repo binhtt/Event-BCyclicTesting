@@ -1,0 +1,112 @@
+{
+  "screened_models": 8,
+  "accepted_models": 2,
+  "accepted_tests": 973,
+  "accepted_input_steps": 6093,
+  "valid_mutants": 59,
+  "counts": {
+    "killed": 45,
+    "survived": 14,
+    "compile_failed": 0
+  },
+  "score_unadjusted": 0.7627118644067796,
+  "equivalent_mutant_analysis": false,
+  "models": [
+    {
+      "benchmark": "m183",
+      "dot_states": 9,
+      "dot_transitions": 108,
+      "common_input_symbols": 5,
+      "reachable_nonerror_states_common_interface": 8,
+      "transition_targets": 40,
+      "tests": 70,
+      "input_steps": 255,
+      "reference_failed_tests": 0,
+      "mutation_status": "completed"
+    },
+    {
+      "benchmark": "m158",
+      "dot_states": 28,
+      "dot_transitions": 3360,
+      "common_input_symbols": 17,
+      "reachable_nonerror_states_common_interface": 27,
+      "transition_targets": 459,
+      "tests": 629,
+      "input_steps": 3978,
+      "reference_failed_tests": 1,
+      "mutation_status": "blocked: model/C alignment failed"
+    },
+    {
+      "benchmark": "m164",
+      "dot_states": 43,
+      "dot_transitions": 4386,
+      "common_input_symbols": 22,
+      "reachable_nonerror_states_common_interface": 42,
+      "transition_targets": 924,
+      "tests": 1298,
+      "input_steps": 6050,
+      "reference_failed_tests": 1218,
+      "mutation_status": "blocked: model/C alignment failed"
+    },
+    {
+      "benchmark": "m159",
+      "dot_states": 30,
+      "dot_transitions": 3600,
+      "common_input_symbols": 21,
+      "reachable_nonerror_states_common_interface": 29,
+      "transition_targets": 609,
+      "tests": 903,
+      "input_steps": 5838,
+      "reference_failed_tests": 0,
+      "mutation_status": "completed"
+    },
+    {
+      "benchmark": "m135",
+      "dot_states": 57,
+      "dot_transitions": 10089,
+      "common_input_symbols": 27,
+      "reachable_nonerror_states_common_interface": 56,
+      "transition_targets": 1512,
+      "tests": 2646,
+      "input_steps": 33021,
+      "reference_failed_tests": 2,
+      "mutation_status": "blocked: model/C alignment failed"
+    },
+    {
+      "benchmark": "m55",
+      "dot_states": 181,
+      "dot_transitions": 28236,
+      "common_input_symbols": 18,
+      "reachable_nonerror_states_common_interface": 181,
+      "transition_targets": 3258,
+      "tests": 9306,
+      "input_steps": 184986,
+      "reference_failed_tests": 31,
+      "mutation_status": "blocked: model/C alignment failed"
+    },
+    {
+      "benchmark": "m54",
+      "dot_states": 27,
+      "dot_transitions": 270,
+      "common_input_symbols": 10,
+      "reachable_nonerror_states_common_interface": 26,
+      "transition_targets": 260,
+      "tests": 690,
+      "input_steps": 2770,
+      "reference_failed_tests": 93,
+      "mutation_status": "blocked: model/C alignment failed"
+    },
+    {
+      "benchmark": "m76",
+      "dot_states": 210,
+      "dot_transitions": 5460,
+      "common_input_symbols": 25,
+      "reachable_nonerror_states_common_interface": 209,
+      "transition_targets": 5225,
+      "tests": 9350,
+      "input_steps": 100575,
+      "reference_failed_tests": 1380,
+      "mutation_status": "blocked: model/C alignment failed"
+    }
+  ]
+}

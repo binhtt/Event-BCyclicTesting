@@ -1,0 +1,29 @@
+% unused_constants(1,[period])
+% Runtime for SOLUTION for SETUP_CONSTANTS: 58 ms (walltime: 58 ms)
+% Runtime to FINALISE SETUP_CONSTANTS: 1 ms (walltime: 0 ms)
+
+ALL OPERATIONS COVERED
+% Model checking finished, all open states visited
+Model checking time: 218 ms (223 ms walltime)
+States analysed: 1009
+Transitions fired: 24194
+No counter example found. ALL states visited.
+
+Coverage Information:
+CATEGORY HITS
+STATES 1010
+deadlocked 0
+invariant_violated 0
+invariant_not_checked 0
+open 0
+live 1010
+total 1010
+------------- 
+TOTAL_TRANSITIONS 24194
+COVERED_EVENTS 4
+Cycle 12096
+Environment 12096
+INITIALISATION 1
+SETUP_CONSTANTS 1
+UNCOVERED_EVENTS 0
+

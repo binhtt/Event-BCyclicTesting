@@ -1,0 +1,511 @@
+WARNING: Using incubator modules: jdk.incubator.foreign, jdk.incubator.vector
+RESULT C_AutomotivePilot 0/0
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+GOAL INITIALISATION/inv_remaining/INV 0∈0 ‥ 5 − 1
+PENDING M0_AtomicCycle INITIALISATION/inv_remaining/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+CASE_RESULT e=TRUE null
+CASE_RESULT h=TRUE null
+CASE_RESULT h=TRUE null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+GOAL Cycle/inv_hazard/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ p)=bothMode
+GOAL Cycle/inv_hazard/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ p)=bothMode
+GOAL Cycle/inv_hazard/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ p)=bothMode
+GOAL Cycle/inv_hazard/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ p)=bothMode
+PENDING M0_AtomicCycle Cycle/inv_hazard/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+CASE_RESULT e=TRUE null
+CASE_RESULT h=TRUE null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pLeft null
+CASE_RESULT b=TRUE null
+GOAL Cycle/inv_engine/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ p)=noMode
+GOAL Cycle/inv_engine/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ p)=noMode
+PENDING M0_AtomicCycle Cycle/inv_engine/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+CASE_RESULT e=TRUE null
+CASE_RESULT h=TRUE null
+CASE_RESULT h=TRUE null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+GOAL Cycle/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ p) ↦ TRUE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ p) ↦ TRUE)
+GOAL Cycle/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ p) ↦ FALSE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ p) ↦ FALSE)
+GOAL Cycle/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ p) ↦ TRUE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ p) ↦ TRUE)
+GOAL Cycle/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ p) ↦ FALSE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ p) ↦ FALSE)
+GOAL Cycle/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ p) ↦ TRUE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ p) ↦ TRUE)
+GOAL Cycle/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ p) ↦ FALSE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ p) ↦ FALSE)
+GOAL Cycle/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ p) ↦ TRUE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ p) ↦ TRUE)
+GOAL Cycle/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ p) ↦ FALSE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ p) ↦ FALSE)
+PENDING M0_AtomicCycle Cycle/inv_sync/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+CASE_RESULT e=TRUE null
+CASE_RESULT e=TRUE null
+CASE_RESULT h=TRUE null
+CASE_RESULT h=TRUE null
+CASE_RESULT h=TRUE null
+CASE_RESULT h=TRUE null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+GOAL Cycle/inv_phaseoff/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ p) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ p) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ p) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ p) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(TRUE ↦ TRUE ↦ pNeutral) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(TRUE ↦ TRUE ↦ pNeutral) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(TRUE ↦ TRUE ↦ pLeft) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(TRUE ↦ TRUE ↦ p) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(TRUE ↦ FALSE ↦ pNeutral) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(TRUE ↦ FALSE ↦ pNeutral) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(TRUE ↦ FALSE ↦ pLeft) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(TRUE ↦ FALSE ↦ p) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(FALSE ↦ TRUE ↦ pNeutral) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(FALSE ↦ TRUE ↦ pNeutral) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(FALSE ↦ TRUE ↦ pLeft) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(FALSE ↦ TRUE ↦ p) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(FALSE ↦ FALSE ↦ pNeutral) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(FALSE ↦ FALSE ↦ pNeutral) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(FALSE ↦ FALSE ↦ pLeft) ↦ FALSE)=0
+GOAL Cycle/inv_phaseoff/INV lampR(command(FALSE ↦ FALSE ↦ p) ↦ FALSE)=0
+PENDING M0_AtomicCycle Cycle/inv_phaseoff/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+CASE_RESULT e=TRUE null
+CASE_RESULT h=TRUE null
+CASE_RESULT h=TRUE null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+GOAL Cycle/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ p)∈{leftMode,bothMode}
+GOAL Cycle/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ p)∈{leftMode,bothMode}
+GOAL Cycle/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ p)∈{leftMode,bothMode}
+GOAL Cycle/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ p)∈{leftMode,bothMode}
+GOAL Cycle/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ p)∈{leftMode,bothMode}
+GOAL Cycle/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ p)∈{leftMode,bothMode}
+GOAL Cycle/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ p)∈{leftMode,bothMode}
+GOAL Cycle/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ p)∈{leftMode,bothMode}
+PENDING M0_AtomicCycle Cycle/inv_leftactive/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+CASE_RESULT e=TRUE null
+CASE_RESULT h=TRUE null
+CASE_RESULT h=TRUE null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pNeutral null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT p=pLeft null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+CASE_RESULT b=TRUE null
+GOAL Cycle/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ p)∈{rightMode,bothMode}
+GOAL Cycle/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ p)∈{rightMode,bothMode}
+GOAL Cycle/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ p)∈{rightMode,bothMode}
+GOAL Cycle/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ p)∈{rightMode,bothMode}
+GOAL Cycle/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ p)∈{rightMode,bothMode}
+GOAL Cycle/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ p)∈{rightMode,bothMode}
+GOAL Cycle/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ p)∈{rightMode,bothMode}
+GOAL Cycle/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ p)∈{rightMode,bothMode}
+PENDING M0_AtomicCycle Cycle/inv_rightactive/INV
+UNPROVED M0_AtomicCycle INITIALISATION/inv_remaining/INV
+UNPROVED M0_AtomicCycle Cycle/inv_hazard/INV
+UNPROVED M0_AtomicCycle Cycle/inv_engine/INV
+UNPROVED M0_AtomicCycle Cycle/inv_sync/INV
+UNPROVED M0_AtomicCycle Cycle/inv_phaseoff/INV
+UNPROVED M0_AtomicCycle Cycle/inv_leftactive/INV
+UNPROVED M0_AtomicCycle Cycle/inv_rightactive/INV
+RESULT M0_AtomicCycle 25/32
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+GOAL INITIALISATION/inv_remaining/INV 0∈0 ‥ 5 − 1
+PENDING M1_SampledCycle INITIALISATION/inv_remaining/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+GOAL INITIALISATION/inv_stage/INV 0∈0 ‥ 2
+PENDING M1_SampledCycle INITIALISATION/inv_stage/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+GOAL INITIALISATION/inv_nextRemaining/INV 0∈0 ‥ 5 − 1
+PENDING M1_SampledCycle INITIALISATION/inv_nextRemaining/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+GOAL Sample/inv_stage/INV 1∈0 ‥ 2
+PENDING M1_SampledCycle Sample/inv_stage/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+GOAL Sample/VAR 2 − 1<2
+PENDING M1_SampledCycle Sample/VAR
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+GOAL Decide/inv_stage/INV 2∈0 ‥ 2
+PENDING M1_SampledCycle Decide/inv_stage/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+GOAL Decide/NAT 2 − 1∈ℕ
+PENDING M1_SampledCycle Decide/NAT
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+GOAL Decide/VAR 0<2 − 1
+PENDING M1_SampledCycle Decide/VAR
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+CASE_RESULT sE=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+GOAL Emit/inv_hazard/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ sP)=bothMode
+GOAL Emit/inv_hazard/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ sP)=bothMode
+GOAL Emit/inv_hazard/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ sP)=bothMode
+GOAL Emit/inv_hazard/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ sP)=bothMode
+PENDING M1_SampledCycle Emit/inv_hazard/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+CASE_RESULT sE=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pLeft null
+CASE_RESULT nextOn=TRUE null
+GOAL Emit/inv_engine/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ sP)=noMode
+GOAL Emit/inv_engine/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ sP)=noMode
+PENDING M1_SampledCycle Emit/inv_engine/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+CASE_RESULT sE=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+GOAL Emit/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ sP) ↦ TRUE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ sP) ↦ TRUE)
+GOAL Emit/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ sP) ↦ FALSE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ sP) ↦ FALSE)
+GOAL Emit/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ sP) ↦ TRUE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ sP) ↦ TRUE)
+GOAL Emit/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ sP) ↦ FALSE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ sP) ↦ FALSE)
+GOAL Emit/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ sP) ↦ TRUE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ sP) ↦ TRUE)
+GOAL Emit/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ sP) ↦ FALSE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ sP) ↦ FALSE)
+GOAL Emit/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ sP) ↦ TRUE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ sP) ↦ TRUE)
+GOAL Emit/inv_sync/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ sP) ↦ FALSE)={noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ sP) ↦ FALSE)
+PENDING M1_SampledCycle Emit/inv_sync/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+CASE_RESULT sE=TRUE null
+CASE_RESULT sE=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+GOAL Emit/inv_phaseoff/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ sP) ↦ FALSE)=0
+GOAL Emit/inv_phaseoff/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ sP) ↦ FALSE)=0
+GOAL Emit/inv_phaseoff/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ sP) ↦ FALSE)=0
+GOAL Emit/inv_phaseoff/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 100,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 0,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ sP) ↦ FALSE)=0
+GOAL Emit/inv_phaseoff/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ sP) ↦ FALSE)=0
+GOAL Emit/inv_phaseoff/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ sP) ↦ FALSE)=0
+GOAL Emit/inv_phaseoff/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ sP) ↦ FALSE)=0
+GOAL Emit/inv_phaseoff/INV {noMode ↦ FALSE ↦ 0,noMode ↦ TRUE ↦ 0,leftMode ↦ FALSE ↦ 0,leftMode ↦ TRUE ↦ 0,rightMode ↦ FALSE ↦ 0,rightMode ↦ TRUE ↦ 100,bothMode ↦ FALSE ↦ 0,bothMode ↦ TRUE ↦ 100}({FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ sP) ↦ FALSE)=0
+PENDING M1_SampledCycle Emit/inv_phaseoff/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+CASE_RESULT sE=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+GOAL Emit/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ sP)∈{leftMode,bothMode}
+GOAL Emit/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ sP)∈{leftMode,bothMode}
+GOAL Emit/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ sP)∈{leftMode,bothMode}
+GOAL Emit/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ sP)∈{leftMode,bothMode}
+GOAL Emit/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ sP)∈{leftMode,bothMode}
+GOAL Emit/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ sP)∈{leftMode,bothMode}
+GOAL Emit/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ sP)∈{leftMode,bothMode}
+GOAL Emit/inv_leftactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ sP)∈{leftMode,bothMode}
+PENDING M1_SampledCycle Emit/inv_leftactive/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+CASE_RESULT sE=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+GOAL Emit/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ sP)∈{rightMode,bothMode}
+GOAL Emit/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ TRUE ↦ sP)∈{rightMode,bothMode}
+GOAL Emit/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ sP)∈{rightMode,bothMode}
+GOAL Emit/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(TRUE ↦ FALSE ↦ sP)∈{rightMode,bothMode}
+GOAL Emit/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ sP)∈{rightMode,bothMode}
+GOAL Emit/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ TRUE ↦ sP)∈{rightMode,bothMode}
+GOAL Emit/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ sP)∈{rightMode,bothMode}
+GOAL Emit/inv_rightactive/INV {FALSE ↦ FALSE ↦ pNeutral ↦ noMode,FALSE ↦ FALSE ↦ pLeft ↦ noMode,FALSE ↦ FALSE ↦ pRight ↦ noMode,FALSE ↦ TRUE ↦ pNeutral ↦ bothMode,FALSE ↦ TRUE ↦ pLeft ↦ bothMode,FALSE ↦ TRUE ↦ pRight ↦ bothMode,TRUE ↦ FALSE ↦ pNeutral ↦ noMode,TRUE ↦ FALSE ↦ pLeft ↦ leftMode,TRUE ↦ FALSE ↦ pRight ↦ rightMode,TRUE ↦ TRUE ↦ pNeutral ↦ bothMode,TRUE ↦ TRUE ↦ pLeft ↦ bothMode,TRUE ↦ TRUE ↦ pRight ↦ bothMode}(FALSE ↦ FALSE ↦ sP)∈{rightMode,bothMode}
+PENDING M1_SampledCycle Emit/inv_rightactive/INV
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+DIRECT_DEFAULT loopOnAllPending: All tactics failed
+CASE_RESULT sE=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sH=TRUE null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pNeutral null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT sP=pLeft null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+CASE_RESULT nextOn=TRUE null
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+GOAL Emit/inv_stage/INV 0∈0 ‥ 2
+PENDING M1_SampledCycle Emit/inv_stage/INV
+UNPROVED M1_SampledCycle INITIALISATION/inv_remaining/INV
+UNPROVED M1_SampledCycle INITIALISATION/inv_stage/INV
+UNPROVED M1_SampledCycle INITIALISATION/inv_nextRemaining/INV
+UNPROVED M1_SampledCycle Sample/inv_stage/INV
+UNPROVED M1_SampledCycle Sample/VAR
+UNPROVED M1_SampledCycle Decide/inv_stage/INV
+UNPROVED M1_SampledCycle Decide/NAT
+UNPROVED M1_SampledCycle Decide/VAR
+UNPROVED M1_SampledCycle Emit/inv_hazard/INV
+UNPROVED M1_SampledCycle Emit/inv_engine/INV
+UNPROVED M1_SampledCycle Emit/inv_sync/INV
+UNPROVED M1_SampledCycle Emit/inv_phaseoff/INV
+UNPROVED M1_SampledCycle Emit/inv_leftactive/INV
+UNPROVED M1_SampledCycle Emit/inv_rightactive/INV
+UNPROVED M1_SampledCycle Emit/inv_stage/INV
+RESULT M1_SampledCycle 42/57

@@ -1,0 +1,8 @@
+input codes: [67, 56, 61, 67]
+expected: [87, 82, 77, 87]
+stdout:
+87
+82
+77
+stderr:
+Invalid input: 67

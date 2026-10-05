@@ -1,0 +1,156 @@
+{
+  "urls": {
+    "source.zip": "https://automata.cs.ru.nl/pmwiki/uploads/BenchmarkASMLRERS-YangEtAl2019/challenge_and_training_set_with_dotfiles.zip",
+    "code.zip": "https://rers-challenge.org/2019/problems/industrial/IndLtlCtlCodeRers2019_Mar_9th.zip"
+  },
+  "archives": {
+    "source.zip": "8bb22a868da4772ab3624f7b1b1222c83dd489510e0b78a418d315f8ed842b09",
+    "code.zip": "e92345022a636b1fa80fc8c81477dea461d0dc96a936c511d3f0148fd452d74c"
+  },
+  "files": [
+    {
+      "model": "m183",
+      "archive_entry": "challenge_and_training_set_with_dotfiles/m183.dot",
+      "file": "m183/m183.dot",
+      "sha256": "f5a7179c95f6e9ffcde2cdc436d68f617e5f50b0c6feca47a6c9f2e65dd09bc3"
+    },
+    {
+      "model": "m183",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m183/m183_LTL_CTL.c",
+      "file": "m183/m183_LTL_CTL.c",
+      "sha256": "e701d9af1626d619840a68736daf8c22fd5453f2b196a5cb83b1573a658d4f33"
+    },
+    {
+      "model": "m183",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m183/m183_LTL_CTL_alphabet_mapping_C_version.txt",
+      "file": "m183/m183_LTL_CTL_alphabet_mapping_C_version.txt",
+      "sha256": "0785c8db21415d5822beef06f2b0832e9e81155d138fbe58f3cb1473ac0cbbfa"
+    },
+    {
+      "model": "m158",
+      "archive_entry": "challenge_and_training_set_with_dotfiles/m158.dot",
+      "file": "m158/m158.dot",
+      "sha256": "61760fb19def4c9e833e8ab9aa75f7c62130a33e48863380ab2e071ebc515eaa"
+    },
+    {
+      "model": "m158",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m158/m158_LTL_CTL_alphabet_mapping_C_version.txt",
+      "file": "m158/m158_LTL_CTL_alphabet_mapping_C_version.txt",
+      "sha256": "6f3051a9317475e3f7348d6fa0eb609e5de211c3357b6a39815e7e3d75365c9f"
+    },
+    {
+      "model": "m158",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m158/m158_LTL_CTL.c",
+      "file": "m158/m158_LTL_CTL.c",
+      "sha256": "ea107836b37dd95b411d052c6292c11f23cc3e736215c1f2ddd5b158f5d0c190"
+    },
+    {
+      "model": "m164",
+      "archive_entry": "challenge_and_training_set_with_dotfiles/m164.dot",
+      "file": "m164/m164.dot",
+      "sha256": "8a0e7d0e2b19e4ba8578791a227cb23c388a8c4563a266960446ec71c151884d"
+    },
+    {
+      "model": "m164",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m164/m164_LTL_CTL_alphabet_mapping_C_version.txt",
+      "file": "m164/m164_LTL_CTL_alphabet_mapping_C_version.txt",
+      "sha256": "a79c37c4220f897357294cde73e701c655505492407247c55041925d30b8b0a2"
+    },
+    {
+      "model": "m164",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m164/m164_LTL_CTL.c",
+      "file": "m164/m164_LTL_CTL.c",
+      "sha256": "3bd12cc9b10381371702077fc107204f9738992493b5344ab0fd53a0a2598732"
+    },
+    {
+      "model": "m159",
+      "archive_entry": "challenge_and_training_set_with_dotfiles/m159.dot",
+      "file": "m159/m159.dot",
+      "sha256": "f8640552050f88777a7921d4f09f141c1443396aecdd7d993a08dde93cdeef5a"
+    },
+    {
+      "model": "m159",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m159/m159_LTL_CTL.c",
+      "file": "m159/m159_LTL_CTL.c",
+      "sha256": "c7565ec9daf95f320a294ddc160310e9967a86233731c6d81c636362803dcf29"
+    },
+    {
+      "model": "m159",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m159/m159_LTL_CTL_alphabet_mapping_C_version.txt",
+      "file": "m159/m159_LTL_CTL_alphabet_mapping_C_version.txt",
+      "sha256": "40ed794e0f0e34ed2d5e3f96e89ef1acdc907e382218f504a36285242e15429c"
+    },
+    {
+      "model": "m135",
+      "archive_entry": "challenge_and_training_set_with_dotfiles/m135.dot",
+      "file": "m135/m135.dot",
+      "sha256": "9b7083e117fbe139e9d0b92d964328a50364142a4a5629ca1e727262250faf7e"
+    },
+    {
+      "model": "m135",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m135/m135_LTL_CTL.c",
+      "file": "m135/m135_LTL_CTL.c",
+      "sha256": "437208a185f48ed0e826a14bfac4384ab1a319d684348802fcfa3ab526674c3a"
+    },
+    {
+      "model": "m135",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m135/m135_LTL_CTL_alphabet_mapping_C_version.txt",
+      "file": "m135/m135_LTL_CTL_alphabet_mapping_C_version.txt",
+      "sha256": "723a8e8984d1d9775abd1dde3d3b10f33450857f4e45d6ffadfca040d90c0518"
+    },
+    {
+      "model": "m55",
+      "archive_entry": "challenge_and_training_set_with_dotfiles/m55.dot",
+      "file": "m55/m55.dot",
+      "sha256": "cf9edc0604e4b340c2ad46c36730463b9a25525ed0c8d53b951941d93f686e66"
+    },
+    {
+      "model": "m55",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m55/m55_LTL_CTL.c",
+      "file": "m55/m55_LTL_CTL.c",
+      "sha256": "3c5178c1b611623353f5d8a27059eb0bda7b70e0d5864d919139f02d13210c90"
+    },
+    {
+      "model": "m55",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m55/m55_LTL_CTL_alphabet_mapping_C_version.txt",
+      "file": "m55/m55_LTL_CTL_alphabet_mapping_C_version.txt",
+      "sha256": "4c2098e325caab205b6d1266eb3753893481a2ab261ba7f305f65692c75ab62d"
+    },
+    {
+      "model": "m54",
+      "archive_entry": "challenge_and_training_set_with_dotfiles/m54.dot",
+      "file": "m54/m54.dot",
+      "sha256": "30bb4b4bb3aab5c27f3678821e3f41b5f40516edd2a4dfba1afc7ac8ed14aa0c"
+    },
+    {
+      "model": "m54",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m54/m54_LTL_CTL.c",
+      "file": "m54/m54_LTL_CTL.c",
+      "sha256": "56f9de90bcb0f0e5abe92163dd98c566f94ad50313f26814f57444274c11a54b"
+    },
+    {
+      "model": "m54",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m54/m54_LTL_CTL_alphabet_mapping_C_version.txt",
+      "file": "m54/m54_LTL_CTL_alphabet_mapping_C_version.txt",
+      "sha256": "b5e5837c633f87bb4f2f7ab74ca6da110d269971c65843a8ee33909d575e92c9"
+    },
+    {
+      "model": "m76",
+      "archive_entry": "challenge_and_training_set_with_dotfiles/m76.dot",
+      "file": "m76/m76.dot",
+      "sha256": "8c55f611522edaa9ad788b4afbcf943f6dc3769c0a4047b8b7c2a4d3375d6e0c"
+    },
+    {
+      "model": "m76",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m76/m76_LTL_CTL.c",
+      "file": "m76/m76_LTL_CTL.c",
+      "sha256": "7380551de0e709dc87b53113b29a7032d480d36daa7996b3b642742a842f902e"
+    },
+    {
+      "model": "m76",
+      "archive_entry": "IndLtlCtlCodeRers2019/arithmetic/m76/m76_LTL_CTL_alphabet_mapping_C_version.txt",
+      "file": "m76/m76_LTL_CTL_alphabet_mapping_C_version.txt",
+      "sha256": "979b1fe82e888aecfb2791157f69887c113f71dfe108e8094ed6cba329ad8944"
+    }
+  ]
+}

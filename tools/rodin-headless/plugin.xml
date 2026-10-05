@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin><extension point="org.eclipse.core.runtime.applications" id="build"><application><run class="pilot.BuildPilot"/></application></extension></plugin>

@@ -1,0 +1,98 @@
+{
+  "tool": "Rodin 3.9",
+  "baseline_closed": 61,
+  "closed": 67,
+  "total": 89,
+  "pending": [
+    {
+      "machine": "M0_AtomicCycle",
+      "obligation": "INITIALISATION/inv_remaining/INV"
+    },
+    {
+      "machine": "M0_AtomicCycle",
+      "obligation": "Cycle/inv_hazard/INV"
+    },
+    {
+      "machine": "M0_AtomicCycle",
+      "obligation": "Cycle/inv_engine/INV"
+    },
+    {
+      "machine": "M0_AtomicCycle",
+      "obligation": "Cycle/inv_sync/INV"
+    },
+    {
+      "machine": "M0_AtomicCycle",
+      "obligation": "Cycle/inv_phaseoff/INV"
+    },
+    {
+      "machine": "M0_AtomicCycle",
+      "obligation": "Cycle/inv_leftactive/INV"
+    },
+    {
+      "machine": "M0_AtomicCycle",
+      "obligation": "Cycle/inv_rightactive/INV"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "INITIALISATION/inv_remaining/INV"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "INITIALISATION/inv_stage/INV"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "INITIALISATION/inv_nextRemaining/INV"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "Sample/inv_stage/INV"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "Sample/VAR"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "Decide/inv_stage/INV"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "Decide/NAT"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "Decide/VAR"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "Emit/inv_hazard/INV"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "Emit/inv_engine/INV"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "Emit/inv_sync/INV"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "Emit/inv_phaseoff/INV"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "Emit/inv_leftactive/INV"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "Emit/inv_rightactive/INV"
+    },
+    {
+      "machine": "M1_SampledCycle",
+      "obligation": "Emit/inv_stage/INV"
+    }
+  ],
+  "models_modified": false,
+  "unrestricted_attempt": "Java heap space; failed, excluded"
+}
